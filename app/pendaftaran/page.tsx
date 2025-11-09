@@ -116,10 +116,9 @@ export default function Pendaftaran() {
               className="w-full border border-gray-300 rounded-xl px-4 py-2 focus:ring-2 focus:ring-primary focus:outline-none"
             >
               <option value="">Pilih Program Studi</option>
-              <option value="Sistem Informasi">Sistem Informasi</option>
-              <option value="Teknik Informatika">Teknik Informatika</option>
-              <option value="Manajemen">Manajemen</option>
-              <option value="Akuntansi">Akuntansi</option>
+              <option value="Housekeeping">Housekeeping</option>
+              <option value="FB Service">FB Service</option>
+              <option value="Culinary">Culinary</option>
             </select>
           </div>
 

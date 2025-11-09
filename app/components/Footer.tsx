@@ -38,8 +38,13 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/tentang" className="hover:text-primary transition">
+              <Link href="/about" className="hover:text-primary transition">
                 Tentang Kami
+              </Link>
+            </li>
+            <li>
+              <Link href="/news" className="hover:text-primary transition">
+                Berita
               </Link>
             </li>
             <li>

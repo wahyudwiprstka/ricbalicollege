@@ -9,10 +9,11 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const navItems = [
   { name: "Home", path: "/" },
+  { name: "Program Studi", path: "/prodi" },
   { name: "Tentang", path: "/about" },
-  { name: "Berita", path: "/news-and-jobs" },
+  { name: "Berita", path: "/news" },
   { name: "Instruktur", path: "/instructors" },
-  { name: "Pendaftaran", path: "/admission" },
+  { name: "Pendaftaran", path: "/pendaftaran" },
   { name: "Kontak", path: "/contact" },
 ];
 

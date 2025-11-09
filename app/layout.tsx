@@ -1,10 +1,14 @@
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import WhatsappPopup from "./components/WhatsappPopup";
 import "./globals.css";
 
 export const metadata = {
   title: "RIC College",
   description: "Website resmi RIC College",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
@@ -17,6 +21,7 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-1 mt-22">{children}</main>
+        <WhatsappPopup />
         <Footer />
       </body>
     </html>

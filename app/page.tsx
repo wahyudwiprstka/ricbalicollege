@@ -4,6 +4,9 @@ import HeroSlider from "./components/HeroSlider";
 import VisionMission from "./components/visionMission";
 import AboutSection from "./components/AboutSection";
 import ProgramStudi from "./components/Prodi";
+import CTASection from "./components/CTA";
+import Footer from "./components/Footer";
+import WhatsappPopup from "./components/WhatsappPopup";
 
 export default async function HomePage() {
   const profile = await client.fetch(profileQuery);
@@ -14,6 +17,8 @@ export default async function HomePage() {
       <VisionMission />
       <AboutSection />
       <ProgramStudi />
+      <CTASection />
+      <WhatsappPopup />
       {/* <section className="px-16 py-10">
         <h1 className="text-3xl font-bold mb-4">{profile?.name}</h1>
         <h2 className="text-xl font-semibold mb-2">Visi</h2>

@@ -8,7 +8,7 @@ export default function NewsContent({ news }: any) {
   console.log(news);
   return (
     <section className="max-w-6xl mx-auto px-6 pt-16 grid md:grid-cols-3 gap-10">
-      {news.map((item, index) => (
+      {news.map((item: any, index: any) => (
         <motion.div
           key={index}
           initial={{ opacity: 0, y: 30 }}

@@ -38,7 +38,7 @@ export default function AboutPage() {
               Rising International College (RIC){" "}
             </span>
             berdiri di bawah{" "}
-            <span className="font-semibold">Yayasan Tridaya Santana Loka</span>
+            <span className="font-semibold">Yayasan Tridaya Santana Loka </span>
             yang didirikan pada{" "}
             <span className="text-[#B21E35]">25 April 2025</span>. Lembaga ini
             hadir sebagai wujud komitmen untuk meningkatkan kualitas pendidikan
@@ -46,9 +46,9 @@ export default function AboutPage() {
           </p>
           <p className="mt-4 text-gray-700 leading-relaxed">
             Dengan dukungan tenaga pengajar profesional dan kemitraan strategis
-            bersama industri, RIC Bali Jembrana siap menjadi lembaga pelatihan
-            unggulan yang mencetak tenaga kerja kompeten dan siap bersaing di
-            kancah nasional maupun internasional.
+            bersama industri, RIC Bali siap menjadi lembaga pelatihan unggulan
+            yang mencetak tenaga kerja kompeten dan siap bersaing di kancah
+            nasional maupun internasional.
           </p>
         </motion.div>
 

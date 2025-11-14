@@ -64,12 +64,12 @@ export default function Kontak() {
 
             <div className="flex items-center gap-3">
               <Mail className="text-primary" />
-              <p>admin@riccollege.ac.id</p>
+              <p>admin@ricbali.com</p>
             </div>
 
             <div className="flex items-center gap-3">
               <Phone className="text-primary" />
-              <p>+62 812-3456-7890</p>
+              <p>+62 822-2161-4945</p>
             </div>
           </div>
 

@@ -10,12 +10,18 @@ export const profileQuery = `
 }
 `;
 
-export const newsQuery = `
-*[_type == "news"] | order(date desc){
+export const newsBySlugQuery = `
+*[_type == "news" && slug.current == $slug] | order(date desc){
   title,
   slug,
-  date,
+  publishedAt,
   coverImage,
-  content
+  body
 }
+`;
+
+export const instrukturQuery = `
+  *[_type = 'instruktur'] | order(name desc){
+    
+  }
 `;

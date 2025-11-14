@@ -14,12 +14,12 @@ export default function Footer() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-2xl font-bold mb-3 ">RIC College</h2>
+          <h2 className="text-2xl font-bold mb-3 ">RIC Bali</h2>
           <p className=" text-sm leading-relaxed">
-            Rising International College (RIC) Bali Jembrana merupakan lembaga
-            pelatihan kerja berbasis vokasi yang berkomitmen untuk menghasilkan
-            lulusan berkualitas, kompeten, dan siap menghadapi tantangan
-            industri global.
+            Rising International College (RIC) Bali merupakan lembaga pelatihan
+            kerja berbasis vokasi yang berkomitmen untuk menghasilkan lulusan
+            berkualitas, kompeten, dan siap menghadapi tantangan industri
+            global.
           </p>
         </motion.div>
 
@@ -48,10 +48,7 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link
-                href="/program-studi"
-                className="hover:text-primary transition"
-              >
+              <Link href="/prodi" className="hover:text-primary transition">
                 Program Studi
               </Link>
             </li>
@@ -64,7 +61,7 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/kontak" className="hover:text-primary transition">
+              <Link href="/contact" className="hover:text-primary transition">
                 Kontak
               </Link>
             </li>
@@ -92,7 +89,7 @@ export default function Footer() {
             </li>
             <li className="flex items-center gap-2">
               <Mail size={18} className="" />
-              <span>info@riccollege.com</span>
+              <span>admin@ricbali.com</span>
             </li>
           </ul>
         </motion.div>

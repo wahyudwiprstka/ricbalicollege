@@ -13,7 +13,7 @@ export default function CTASection() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
-        className="relative z-10 max-w-4xl mx-auto text-center"
+        className="relative max-w-4xl mx-auto text-center"
       >
         <h2 className="text-3xl md:text-4xl font-bold mb-4 leading-snug">
           Wujudkan Masa Depanmu Bersama{" "}

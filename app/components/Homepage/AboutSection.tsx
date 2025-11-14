@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function AboutSection() {
   return (
-    <section className="relative py-24 bg-white overflow-hidden">
+    <section className="relative py-24 bg-white overflow-hidden bg-linear-to-br from-rose-50 to-red-50">
       <div className="relative max-w-6xl mx-auto px-6 lg:px-12 grid md:grid-cols-2 gap-12 items-center">
         {/* Gambar kampus atau ilustrasi */}
         <motion.div

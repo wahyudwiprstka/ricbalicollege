@@ -78,7 +78,7 @@ export default function Navbar() {
         {menuOpen && (
           <motion.nav
             initial={{ opacity: 0, height: 0 }}
-            whileInView={{ opacity: 100, height: 240 }}
+            whileInView={{ opacity: 100, height: 280 }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
             className="relative flex flex-col gap-4 mt-3 pb-2"

@@ -1,10 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Parallax, ParallaxBanner } from "react-scroll-parallax";
 
 export default function VisiMisiPage() {
   return (
-    <section className="min-h-screen bg-linear-to-br from-rose-50 to-red-50 flex flex-col items-center justify-center px-6 py-16">
+    <section className="min-h-screen  flex flex-col items-center justify-center px-6 py-16">
       {/* Judul */}
       <motion.img
         src="/img/visimisi.png"

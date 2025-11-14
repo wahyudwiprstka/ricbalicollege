@@ -8,7 +8,7 @@ export default function HeroSlider() {
         width={1920}
         height={756}
         alt="Banner"
-        className=""
+        className="w-full"
       />
     </section>
   );

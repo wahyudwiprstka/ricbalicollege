@@ -5,8 +5,8 @@ import "./globals.css";
 import ParallaxProviderWrapper from "./providers/ParallaxProviderWrapper";
 
 export const metadata = {
-  title: "RIC College",
-  description: "Website resmi RIC College",
+  title: "RIC Bali",
+  description: "Website resmi Rising International College Bali",
   icons: {
     icon: "/img/ricb.png",
   },

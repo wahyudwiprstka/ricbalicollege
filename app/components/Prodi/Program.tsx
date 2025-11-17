@@ -6,7 +6,7 @@ const Program = ({ programs }: any) => {
   return (
     <div>
       <section className="py-16 px-6 max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {programs.map((program, index) => (
+        {programs.map((program: any, index: any) => (
           <motion.div
             key={index}
             whileHover={{ scale: 1.03 }}

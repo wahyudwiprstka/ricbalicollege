@@ -2,6 +2,13 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import {
+  ReactElement,
+  JSXElementConstructor,
+  ReactNode,
+  ReactPortal,
+  Key,
+} from "react";
 
 const ProdiDetails = ({ program }: any) => {
   return (
@@ -34,7 +41,7 @@ const ProdiDetails = ({ program }: any) => {
               Tujuan Program
             </h2>
             <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
-              {program.objective.map((obj, i) => (
+              {program.objective.map((obj: string, i: Key) => (
                 <li key={i}>{obj}</li>
               ))}
             </ul>
@@ -43,7 +50,7 @@ const ProdiDetails = ({ program }: any) => {
               Kurikulum Singkat
             </h2>
             <ul className="list-decimal list-inside space-y-2 text-gray-700 mb-8">
-              {program.kurikulum.map((item, i) => (
+              {program.kurikulum.map((item: string, i: Key) => (
                 <li key={i}>{item}</li>
               ))}
             </ul>

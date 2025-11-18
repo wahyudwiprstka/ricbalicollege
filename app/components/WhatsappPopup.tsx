@@ -36,7 +36,7 @@ export default function WhatsappPopup() {
             </p>
 
             <a
-              href="https://wa.me/6281234567890?text=Halo%20Admin%20RIC%20College%2C%20saya%20ingin%20bertanya%20tentang%20program%20studi."
+              href="https://wa.me/6282221614945?text=Halo%20Admin%20RIC%20College%2C%20saya%20ingin%20bertanya%20tentang%20program%20studi."
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-500 hover:bg-green-600 text-white w-full text-center block py-2 rounded-lg font-medium transition"

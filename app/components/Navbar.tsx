@@ -9,7 +9,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const navItems = [
   { name: "Home", path: "/" },
-  { name: "Program Studi", path: "/prodi" },
+  { name: "Program Jurusan", path: "/jurusan" },
   { name: "Tentang", path: "/about" },
   { name: "Berita", path: "/news" },
   { name: "Instruktur", path: "/instructors" },

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Mail, MapPin, Phone, Send } from "lucide-react";
 import { useState } from "react";
+import Hero from "../components/Hero";
 
 export default function Kontak() {
   const [form, setForm] = useState({
@@ -26,19 +27,11 @@ export default function Kontak() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-linear-to-r from-primary to-red-950 text-white text-center py-20 px-6">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <h1 className="text-4xl font-bold mb-4">Hubungi Kami</h1>
-          <p className="max-w-2xl mx-auto text-red-100 text-lg">
-            Kami siap membantu menjawab pertanyaan Anda mengenai Rising
-            International College Bali.
-          </p>
-        </motion.div>
-      </section>
+      <Hero
+        title="Hubungi Kami"
+        description="Kami siap membantu menjawab pertanyaan Anda mengenai Rising
+            International College Bali."
+      />
 
       {/* Kontak Info + Form */}
       <section className="max-w-6xl mx-auto py-16 px-6 grid md:grid-cols-2 gap-12">
@@ -82,7 +75,9 @@ export default function Kontak() {
 
         {/* Formulir Kontak */}
         <motion.form
-          onSubmit={handleSubmit}
+          action="mailto:admin@ricbali.com"
+          method="POST"
+          encType="text/plain"
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}

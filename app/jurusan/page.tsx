@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { GraduationCap } from "lucide-react";
 import { client } from "../lib/sanity.client";
 import Hero from "../components/Hero";
-import Program from "../components/Prodi/Program";
+import Program from "../components/jurusan/Program";
 
 // const programs = [
 //   {
@@ -48,8 +48,8 @@ export default async function ProgramStudi() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Hero
-        title="Program Studi"
-        description="Temukan berbagai pilihan program studi unggulan yang dirancang untuk
+        title="Program Jurusan"
+        description="Temukan berbagai pilihan jurusan unggulan yang dirancang untuk
           membentuk generasi profesional, kreatif, dan berdaya saing global."
       />
 

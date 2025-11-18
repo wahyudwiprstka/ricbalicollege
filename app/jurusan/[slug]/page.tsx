@@ -1,4 +1,4 @@
-import ProdiDetails from "@/app/components/Prodi/ProdiDetails";
+import ProdiDetails from "@/app/components/jurusan/jurusanDetails";
 import { client } from "@/app/lib/sanity.client";
 import { motion } from "framer-motion";
 import Image from "next/image";

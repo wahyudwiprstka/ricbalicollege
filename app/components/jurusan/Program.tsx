@@ -28,7 +28,7 @@ const Program = ({ programs }: any) => {
                 {program.description}
               </p>
               <Link
-                href={`/prodi/${program.slug.current}`}
+                href={`/jurusan/${program.slug.current}`}
                 className="bg-primary text-white px-4 py-2 rounded-xl hover:bg-red-950 transition-all"
               >
                 Lihat Detail

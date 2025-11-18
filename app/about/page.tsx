@@ -1,26 +1,18 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Hero from "../components/Hero";
 
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-linear-to-b from-[#FFF8F8] to-[#FDECEC] text-gray-800">
       {/* Section 1 - Header */}
-      <section className="py-20 text-center">
-        <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-4xl md:text-5xl font-bold text-primary"
-        >
-          Tentang RIC College
-        </motion.h1>
-        <p className="mt-4 max-w-2xl mx-auto text-gray-600">
-          Lembaga pelatihan kerja di bawah Yayasan Tridaya Santana Loka yang
+      <Hero
+        title="Tentang RIC College"
+        description="Lembaga pelatihan kerja di bawah Yayasan Tridaya Santana Loka yang
           berdedikasi untuk membentuk generasi muda profesional, kompeten, dan
-          berdaya saing global.
-        </p>
-      </section>
+          berdaya saing global."
+      />
 
       {/* Section 2 - Sejarah Singkat */}
       <section className="max-w-6xl mx-auto px-6 py-10 md:py-20 grid md:grid-cols-2 gap-10 items-center">

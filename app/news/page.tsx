@@ -12,6 +12,7 @@ import {
   PaginationPrevious,
 } from "@/components/ui/pagination";
 import NewsPagination from "../components/newsComponents/Pagination";
+import Hero from "../components/Hero";
 
 export const revalidate = 60;
 interface PageProps {
@@ -49,7 +50,11 @@ export default async function BeritaPage({ searchParams }: PageProps) {
   const news = await client.fetch(query, { skip, limit });
   return (
     <main className="min-h-screen bg-linear-to-b from-[#FFF8F8] to-[#FDECEC] text-gray-800">
-      <NewsHeader />
+      <Hero
+        title="Berita & Kegiatan"
+        description="Dapatkan informasi terbaru seputar kegiatan, pelatihan, dan perkembangan
+        Rising International College (RIC) Bali Jembrana."
+      />
       <NewsContent news={news} />
       <NewsPagination page={page} totalpages={totalpages} />
     </main>

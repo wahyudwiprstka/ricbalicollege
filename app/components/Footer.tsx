@@ -48,8 +48,8 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/prodi" className="hover:text-primary transition">
-                Program Studi
+              <Link href="/jurusan" className="hover:text-primary transition">
+                Program Jurusan
               </Link>
             </li>
             <li>

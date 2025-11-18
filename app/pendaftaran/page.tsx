@@ -1,148 +1,62 @@
-"use client";
-import { motion } from "framer-motion";
-import { FileText, Send } from "lucide-react";
-import { useState } from "react";
-
-export default function Pendaftaran() {
-  const [formData, setFormData] = useState({
-    nama: "",
-    email: "",
-    telepon: "",
-    program: "",
-    dokumen: null as File | null,
-  });
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files && e.target.files.length > 0) {
-      setFormData({ ...formData, dokumen: e.target.files[0] });
-    }
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert("Formulir berhasil dikirim!");
-  };
-
+export default function PendaftaranPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Hero Section */}
-      <section className="bg-linear-to-r from-primary to-red-900 text-white text-center py-20 px-6">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <h1 className="text-4xl font-bold mb-4">
-            Pendaftaran Mahasiswa Baru
-          </h1>
-          <p className="max-w-2xl mx-auto text-blue-100 text-lg">
-            Wujudkan masa depanmu bersama kami. Lengkapi formulir di bawah ini
-            untuk melakukan pendaftaran secara online.
-          </p>
-        </motion.div>
-      </section>
+    <section className="min-h-screen bg-gray-50 py-20 px-6">
+      <div className="max-w-4xl mx-auto text-center">
+        {/* Heading */}
+        <h1 className="text-4xl font-bold text-gray-800 mb-4">
+          Pendaftaran Peserta
+        </h1>
+        <p className="text-gray-600 max-w-2xl mx-auto mb-10">
+          Silakan melakukan pendaftaran melalui formulir resmi kami. Isi data
+          diri Anda dengan lengkap untuk dapat diproses oleh tim administrasi
+          RIC Bali. Proses pendaftaran hanya membutuhkan beberapa menit.
+        </p>
 
-      {/* Form Section */}
-      <section className="max-w-3xl mx-auto py-16 px-6">
-        <motion.form
-          onSubmit={handleSubmit}
-          className="bg-white p-8 rounded-2xl shadow-sm shadow-red-900 space-y-6"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
-            <FileText className="text-primary" /> Formulir Pendaftaran
+        {/* Card */}
+        <div className="bg-white shadow-lg rounded-2xl p-12 border">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+            Formulir Pendaftaran Resmi
           </h2>
+          <p className="text-gray-600 mb-8">
+            Klik tombol di bawah ini untuk membuka formulir pendaftaran.
+            Formulir akan terbuka di tab baru.
+          </p>
 
-          <div>
-            <label className="block text-gray-700 font-medium mb-2">
-              Nama Lengkap
-            </label>
-            <input
-              type="text"
-              name="nama"
-              value={formData.nama}
-              onChange={handleChange}
-              required
-              className="w-full border border-gray-300 rounded-xl px-4 py-2 focus:ring-2 focus:ring-primary focus:outline-none"
-            />
-          </div>
-
-          <div>
-            <label className="block text-gray-700 font-medium mb-2">
-              Email
-            </label>
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-              className="w-full border border-gray-300 rounded-xl px-4 py-2 focus:ring-2 focus:ring-primary focus:outline-none"
-            />
-          </div>
-
-          <div>
-            <label className="block text-gray-700 font-medium mb-2">
-              Nomor Telepon
-            </label>
-            <input
-              type="tel"
-              name="telepon"
-              value={formData.telepon}
-              onChange={handleChange}
-              required
-              className="w-full border border-gray-300 rounded-xl px-4 py-2 focus:ring-2 focus:ring-primary focus:outline-none"
-            />
-          </div>
-
-          <div>
-            <label className="block text-gray-700 font-medium mb-2">
-              Program Studi Pilihan
-            </label>
-            <select
-              name="program"
-              value={formData.program}
-              onChange={handleChange}
-              required
-              className="w-full border border-gray-300 rounded-xl px-4 py-2 focus:ring-2 focus:ring-primary focus:outline-none"
-            >
-              <option value="">Pilih Program Studi</option>
-              <option value="Housekeeping">Housekeeping</option>
-              <option value="FB Service">FB Service</option>
-              <option value="Culinary">Culinary</option>
-            </select>
-          </div>
-
-          <div>
-            <label className="block text-gray-700 font-medium mb-2">
-              Upload Dokumen (PDF/Foto Ijazah)
-            </label>
-            <input
-              type="file"
-              accept=".pdf,.jpg,.jpeg,.png"
-              onChange={handleFileChange}
-              required
-              className="w-full border border-gray-300 rounded-xl px-4 py-2 focus:ring-2 focus:ring-primary focus:outline-none"
-            />
-          </div>
-
-          <button
-            type="submit"
-            className="bg-primary text-white w-full py-3 rounded-xl font-semibold hover:bg-red-950 transition-all flex justify-center items-center gap-2"
+          <a
+            href="https://forms.gle/Q4Av7GMLANzgwpFW6"
+            target="_blank"
+            className="inline-block bg-primary text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-red-900 transition"
           >
-            <Send size={18} /> Kirim Pendaftaran
-          </button>
-        </motion.form>
-      </section>
-    </div>
+            Buka Form Pendaftaran
+          </a>
+
+          <p className="text-gray-500 text-sm mt-6">
+            Pastikan Anda mengisi seluruh data dengan benar.
+          </p>
+        </div>
+
+        {/* Informasi Tambahan */}
+        <div className="mt-16 text-left max-w-3xl mx-auto">
+          <h3 className="text-2xl font-bold text-gray-800 mb-4">
+            Persyaratan Umum
+          </h3>
+          <ul className="list-disc text-gray-700 space-y-2 pl-6">
+            <li>Usia minimal 17 tahun.</li>
+            <li>Mengisi formulir pendaftaran secara lengkap.</li>
+            <li>Mengunggah dokumen yang diminta di Google Form.</li>
+            <li>Bersedia mengikuti seluruh prosedur seleksi.</li>
+          </ul>
+
+          <h3 className="text-2xl font-bold text-gray-800 mt-10 mb-4">
+            Bantuan & Informasi
+          </h3>
+          <p className="text-gray-600">
+            Jika mengalami kendala saat mengisi formulir, silakan hubungi tim
+            kami melalui halaman <strong>Kontak</strong> atau WhatsApp resmi RIC
+            Bali.
+          </p>
+        </div>
+      </div>
+    </section>
   );
 }

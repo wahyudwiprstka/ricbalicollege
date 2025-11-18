@@ -7,8 +7,11 @@ const SendForm = () => {
 
     const formData = new FormData(event.target);
 
-    // Format data untuk Google Form (entry.ID=VALUE&entry.ID=VALUE)
-    const urlEncodedData = new URLSearchParams(formData).toString();
+    const formObject = Object.fromEntries(formData.entries());
+
+    const urlEncodedData = new URLSearchParams(
+      formObject as Record<string, string>
+    ).toString();
 
     try {
       const response = await fetch(

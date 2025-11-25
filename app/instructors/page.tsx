@@ -41,7 +41,7 @@ export default async function InstructorPage() {
       {/* Header Section */}
       <Hero
         title="Tim Instruktur Kami"
-        description="Para pengajar di RIC College merupakan profesional berpengalaman di
+        description="Para pengajar di RIC Bali merupakan profesional berpengalaman di
           bidangnya, siap membimbing peserta pelatihan menuju karier sukses di
           industri pariwisata."
       />

@@ -17,7 +17,7 @@ export default function CTASection() {
       >
         <h2 className="text-3xl md:text-4xl font-bold mb-4 leading-snug">
           Wujudkan Masa Depanmu Bersama{" "}
-          <span className="text-primary">RIC College</span>
+          <span className="text-primary">RIC Bali</span>
         </h2>
         <p className="text-lg text-gray-800 mb-8">
           Bergabunglah dalam pelatihan vokasi unggulan kami dan raih

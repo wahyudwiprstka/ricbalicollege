@@ -37,7 +37,7 @@ export default async function InstructorPage() {
   }`;
   const instructors = await client.fetch(query);
   return (
-    <main className="min-h-screen bg-linear-to-b from-[#FFF8F8] to-[#FDECEC] text-gray-800">
+    <main className="min-h-screen bg-gray-50 text-gray-800">
       {/* Header Section */}
       <Hero
         title="Tim Instruktur Kami"

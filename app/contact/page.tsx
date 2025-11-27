@@ -160,11 +160,11 @@ export default function Kontak() {
             className="border-0 w-full rounded-3xl shadow"
           ></iframe>
         </div>
-        <div className="flex flex-col items-center px-10 pt-10 md:px-6 md:py-16 gap-4">
+        <div className="flex flex-col items-center px-10 py-10 md:px-6 md:py-16 gap-4">
           <h2 className="font-bold text-primary text-xl">Kampus Singaraja</h2>
           <iframe
             title="Lokasi RIC College"
-            src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d7895.053329843404!2d114.63955460735863!3d-8.34973675136466!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMjEnMDAuNSJTIDExNMKwMzgnMjguNiJF!5e0!3m2!1sen!2sid!4v1764214691933!5m2!1sen!2sid"
+            src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d6643.379942867186!2d115.13935938385555!3d-8.083388570469776!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMDQnNTkuMSJTIDExNcKwMDgnMzIuNiJF!5e0!3m2!1sen!2sid!4v1764220715465!5m2!1sen!2sid"
             width="100%"
             height="400"
             loading="lazy"

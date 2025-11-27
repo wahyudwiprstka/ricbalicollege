@@ -22,8 +22,8 @@ const ProdiDetails = ({ program }: any) => {
         >
           <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-xl">
             <Image
-              src={program.image.asset.url}
-              alt={program.title}
+              src={program?.image?.asset?.url}
+              alt={program?.title}
               fill
               className="object-cover hover:scale-105 transition-transform duration-700"
             />
@@ -31,17 +31,17 @@ const ProdiDetails = ({ program }: any) => {
 
           <div>
             <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-              {program.title}
+              {program?.title}
             </h1>
             <p className="text-gray-700 leading-relaxed mb-6">
-              {program.description}
+              {program?.description}
             </p>
 
             <h2 className="text-2xl font-semibold text-primary mb-3">
               Tujuan Program
             </h2>
             <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
-              {program.objective.map((obj: string, i: Key) => (
+              {program?.objective?.map((obj: string, i: Key) => (
                 <li key={i}>{obj}</li>
               ))}
             </ul>
@@ -50,7 +50,7 @@ const ProdiDetails = ({ program }: any) => {
               Kurikulum Singkat
             </h2>
             <ul className="list-decimal list-inside space-y-2 text-gray-700 mb-8">
-              {program.kurikulum.map((item: string, i: Key) => (
+              {program?.kurikulum?.map((item: string, i: Key) => (
                 <li key={i}>{item}</li>
               ))}
             </ul>

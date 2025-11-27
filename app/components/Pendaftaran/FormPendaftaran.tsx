@@ -178,7 +178,7 @@ const FormPendaftaran = ({ handleSubmit }: any) => {
 
         <div>
           <label className="block text-gray-700 font-medium mb-2">
-            Program Jurusan Basic Level/D1 Yang Dipilih
+            Program Jurusan Yang Dipilih
           </label>
           <select
             name="entry.2056653400"
@@ -186,11 +186,21 @@ const FormPendaftaran = ({ handleSubmit }: any) => {
             className="w-full border border-gray-300 rounded-xl px-4 py-2 focus:ring-2 focus:ring-primary focus:outline-none"
           >
             <option value="">Pilih Program Jurusan</option>
-            <option value="FOOD AND BEVERAGE SERVICE">
-              Food & Beverage Service
+            <option value="FOOD AND BEVERAGE SERVICE (BASIC LEVEL)">
+              Food & Beverage Service (Basic Level / D1)
             </option>
-            <option value="CULINARY">Culinary</option>
-            <option value="HOUSEKEEPING">Housekeeping</option>
+            <option value="CULINARY (BASIC LEVEL)">
+              Culinary (Basic Level / D1)
+            </option>
+            <option value="HOUSEKEEPING (BASIC LEVEL)">
+              Housekeeping (Basic Level / D1)
+            </option>
+            <option value="ROOM DIVISION (MIDDLE LEVEL)">
+              Room Division (Housekeeping & Front Office) (Middle Level / D2)
+            </option>
+            <option value="FB DIVISION (MIDDLE LEVEL)">
+              FB Division (FB Service & Culinary) (Middle Level / D2)
+            </option>
           </select>
         </div>
 

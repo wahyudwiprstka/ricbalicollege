@@ -68,8 +68,9 @@ export default function Kontak() {
 
           <div className="mt-8">
             <h3 className="text-lg font-semibold mb-2">Jam Operasional</h3>
-            <p>Senin – Jumat: 08.00 - 16.00 WITA</p>
-            <p>Sabtu & Minggu: Tutup</p>
+            <p>Senin – Jumat: 08.00 - 17.00 WITA</p>
+            <p>Sabtu: 08.00 - 13.00 WITA</p>
+            <p>Minggu Libur</p>
           </div>
         </motion.div>
 

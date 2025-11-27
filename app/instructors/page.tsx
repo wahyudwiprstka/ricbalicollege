@@ -37,11 +37,11 @@ export default async function InstructorPage() {
   }`;
   const instructors = await client.fetch(query);
   return (
-    <main className="min-h-screen bg-linear-to-b from-[#FFF8F8] to-[#FDECEC] text-gray-800">
+    <main className="min-h-screen bg-gray-50 text-gray-800">
       {/* Header Section */}
       <Hero
         title="Tim Instruktur Kami"
-        description="Para pengajar di RIC College merupakan profesional berpengalaman di
+        description="Para pengajar di RIC Bali merupakan profesional berpengalaman di
           bidangnya, siap membimbing peserta pelatihan menuju karier sukses di
           industri pariwisata."
       />

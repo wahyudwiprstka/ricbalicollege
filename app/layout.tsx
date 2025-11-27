@@ -20,12 +20,10 @@ export default function RootLayout({
   return (
     <html lang="id">
       <body className="min-h-screen flex flex-col">
-        <ParallaxProviderWrapper>
-          <Navbar />
-          <main className="flex-1 mt-22">{children}</main>
-          <WhatsappPopup />
-          <Footer />
-        </ParallaxProviderWrapper>
+        <Navbar />
+        <main className="flex-1 mt-22">{children}</main>
+        <WhatsappPopup />
+        <Footer />
       </body>
     </html>
   );

@@ -8,7 +8,6 @@ export default function CabangKami() {
       name: "RIC Bali – Jembrana",
       address:
         "Jl. Panji Sakti No.168, Sawe Rangsasa, Dauhwaru, Jembrana, Bali",
-      phone: "0822-2161-4945",
       map: "https://maps.app.goo.gl/bMAom2yZ2HRiKsMJ8",
       image:
         "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1000",
@@ -17,8 +16,7 @@ export default function CabangKami() {
       name: "RIC Bali – Singaraja",
       address:
         "Banjar Dinas Segara, Desa Giri Mas, Kecamatan Sawan, Kabupaten Buleleng. Kode pos 81171",
-      phone: "0813-xxxx-xxxx",
-      map: "https://maps.google.com",
+      map: "https://maps.app.goo.gl/CXuzUwgk3y3uKN9QA",
       image:
         "https://images.unsplash.com/photo-1527030280862-64139fba04ca?q=80&w=1000",
     },
@@ -71,10 +69,6 @@ export default function CabangKami() {
                   <MapPin className="text-red-700 mt-1" size={20} />
                   <p className="text-gray-700">{branch.address}</p>
                 </div>
-
-                <p className="text-gray-700 mb-4">
-                  <strong>Telepon:</strong> {branch.phone}
-                </p>
 
                 <a
                   href={branch.map}

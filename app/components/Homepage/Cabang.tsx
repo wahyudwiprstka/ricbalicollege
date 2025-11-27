@@ -9,13 +9,14 @@ export default function CabangKami() {
       address:
         "Jl. Panji Sakti No.168, Sawe Rangsasa, Dauhwaru, Jembrana, Bali",
       phone: "0822-2161-4945",
-      map: "https://maps.google.com",
+      map: "https://maps.app.goo.gl/bMAom2yZ2HRiKsMJ8",
       image:
         "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1000",
     },
     {
       name: "RIC Bali – Singaraja",
-      address: "Jl. Raya Kuta No. 20, Kuta, Badung",
+      address:
+        "Banjar Dinas Segara, Desa Giri Mas, Kecamatan Sawan, Kabupaten Buleleng. Kode pos 81171",
       phone: "0813-xxxx-xxxx",
       map: "https://maps.google.com",
       image:

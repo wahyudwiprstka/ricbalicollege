@@ -98,7 +98,7 @@ export default function AboutPage() {
       {/* Section 4 - Lokasi */}
       <section className="max-w-6xl mx-auto px-6 py-16 text-center">
         <h2 className="text-3xl font-semibold text-primary mb-6">
-          Lokasi Kampus
+          Lokasi Kampus Jembrana
         </h2>
         <p className="text-gray-700 max-w-2xl mx-auto">
           Jalan Panji Sakti No.168, Sawe Rangsasa, Kelurahan Dauhwaru, Kecamatan
@@ -107,7 +107,27 @@ export default function AboutPage() {
 
         <div className="mt-8 w-full h-[400px] rounded-2xl overflow-hidden shadow-lg">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.2414980175827!2d114.64157337463422!3d-8.36131538575373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd1400b7d8a8f63%3A0xa6b081d59a16b3a2!2sJembrana%2C%20Bali!5e0!3m2!1sen!2sid!4v1690000000000!5m2!1sen!2sid"
+            src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d7895.053329843404!2d114.63955460735863!3d-8.34973675136466!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMjEnMDAuNSJTIDExNMKwMzgnMjguNiJF!5e0!3m2!1sen!2sid!4v1764214691933!5m2!1sen!2sid"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen={true}
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+      <section className="max-w-6xl mx-auto px-6 pb-16 text-center">
+        <h2 className="text-3xl font-semibold text-primary mb-6">
+          Lokasi Kampus Singaraja
+        </h2>
+        <p className="text-gray-700 max-w-2xl mx-auto">
+          Banjar Dinas Segara, Desa Giri Mas, Kecamatan Sawan, Kabupaten
+          Buleleng. Kode pos 81171
+        </p>
+
+        <div className="mt-8 w-full h-[400px] rounded-2xl overflow-hidden shadow-lg">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d8152.829127033174!2d115.13916565827456!3d-8.083716908290457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMDQnNTkuMSJTIDExNcKwMDgnMzIuNiJF!5e0!3m2!1sen!2sid!4v1764216251964!5m2!1sen!2sid"
             width="100%"
             height="100%"
             style={{ border: 0 }}

@@ -146,17 +146,32 @@ export default function Kontak() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.4 }}
-        className="w-full"
+        className="w-full grid md:grid-cols-2"
       >
-        <iframe
-          title="Lokasi RIC College"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.510986985338!2d114.632!3d-8.360!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd14b3d5f2f2a07%3A0xf5a8c5d1efc9241!2sJembrana%2C%20Bali!5e0!3m2!1sen!2sid!4v1694957000000!5m2!1sen!2sid"
-          width="100%"
-          height="400"
-          loading="lazy"
-          allowFullScreen
-          className="border-0 w-full"
-        ></iframe>
+        <div className="flex flex-col items-center px-10 md:px-6 md:py-16 gap-4">
+          <h2 className="font-bold text-primary text-xl">Kampus Jembrana</h2>
+          <iframe
+            title="Lokasi RIC College"
+            src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d7895.053329843404!2d114.63955460735863!3d-8.34973675136466!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMjEnMDAuNSJTIDExNMKwMzgnMjguNiJF!5e0!3m2!1sen!2sid!4v1764214691933!5m2!1sen!2sid"
+            width="100%"
+            height="400"
+            loading="lazy"
+            allowFullScreen
+            className="border-0 w-full rounded-3xl shadow"
+          ></iframe>
+        </div>
+        <div className="flex flex-col items-center px-10 pt-10 md:px-6 md:py-16 gap-4">
+          <h2 className="font-bold text-primary text-xl">Kampus Singaraja</h2>
+          <iframe
+            title="Lokasi RIC College"
+            src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d7895.053329843404!2d114.63955460735863!3d-8.34973675136466!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMjEnMDAuNSJTIDExNMKwMzgnMjguNiJF!5e0!3m2!1sen!2sid!4v1764214691933!5m2!1sen!2sid"
+            width="100%"
+            height="400"
+            loading="lazy"
+            allowFullScreen
+            className="border-0 w-full rounded-3xl shadow"
+          ></iframe>
+        </div>
       </motion.section>
     </div>
   );

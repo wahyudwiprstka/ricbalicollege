@@ -98,7 +98,7 @@ export default function Footer() {
       {/* --- Garis & Copyright --- */}
       <div className="border-t border-white/20 mt-10 pt-6 text-center text-white/60 text-sm">
         <p>
-          © {new Date().getFullYear()} RIC College. Semua Hak Cipta Dilindungi.
+          © {new Date().getFullYear()} RIC Bali. Semua Hak Cipta Dilindungi.
         </p>
       </div>
     </footer>

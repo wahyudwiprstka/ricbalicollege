@@ -86,7 +86,7 @@ export default function Footer() {
           <h3 className="text-lg font-semibold mb-3 ">Hubungi Kami</h3>
           <ul className="space-y-3 text-sm mb-3">
             <li className="flex items-start gap-2">
-              <MapPin size={20} className="mt-1 " />
+              <MapPin size={30} className="mt-1 " />
               <span>
                 Cabang Jembrana - Jl. Panji Sakti No.168, Sawe Rangsasa,
                 Dauhwaru, Jembrana, Bali. Kode pos 82218

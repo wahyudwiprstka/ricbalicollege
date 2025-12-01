@@ -57,8 +57,9 @@ export default function ProgramStudi() {
             Program Studi
           </h2>
           <p className="text-slate-100 max-w-2xl mx-auto mb-12">
-            RIC College Bali Jembrana menawarkan program{" "}
-            <span className="font-semibold text-white">Basic Level</span> dan{" "}
+            RIC Bali Jembrana menawarkan program{" "}
+            <span className="font-semibold text-white">Basic Level (D1)</span>{" "}
+            dan{" "}
             <span className="font-semibold text-white">Middle Level (D2)</span>{" "}
             untuk mempersiapkan peserta menjadi tenaga profesional siap kerja di
             industri perhotelan dan pariwisata.

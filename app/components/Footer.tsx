@@ -89,7 +89,7 @@ export default function Footer() {
               <MapPin size={20} className="mt-1 " />
               <span>
                 Cabang Jembrana - Jl. Panji Sakti No.168, Sawe Rangsasa,
-                Dauhwaru, Jembrana, Bali
+                Dauhwaru, Jembrana, Bali. Kode pos 82218
               </span>
             </li>
             <li className="flex items-start gap-2">

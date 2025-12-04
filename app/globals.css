@@ -11,3 +11,45 @@
 body {
   font-family: "Momo Trust Sans", sans-serif;
 }
+
+.hero-overlay {
+  background: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 0.2) 40%,
+      rgba(0, 0, 0, 0.4) 100%
+    ),
+    rgba(0, 0, 0, 0.4);
+}
+
+.swiper-pagination-bullet {
+  background-color: transparent !important ;
+  border: 2px solid white !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: white !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-pagination {
+  z-index: 50 !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 30px !important;
+  height: 30px !important;
+  padding: 10px !important;
+  background-color: white;
+  color: black !important;
+  border-radius: 50%;
+  margin: 0 20px !important;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgb(235, 230, 230) !important;
+  transition: color, 200ms, ease-in-out;
+}

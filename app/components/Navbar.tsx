@@ -1,11 +1,22 @@
 "use client";
 
-import { Menu, X } from "lucide-react";
+import { ChevronDown, LanguagesIcon, Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { getUserLocale, setUserLocale } from "@/lib/locale";
+import LanguageSwitcher from "./LanguageSwitcher";
+import MobileMenu from "./MobileMenu";
 
 const navItems = [
   { name: "Home", path: "/" },
@@ -22,6 +33,10 @@ export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
 
+  const handleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
@@ -31,7 +46,7 @@ export default function Navbar() {
   const toggleMenu = () => setMenuOpen(!menuOpen);
   return (
     <header
-      className={`fixed z-10 bg-white w-full transition-all duration-300 px-8 md:px-16 py-3 font-elms font-momo shadow`}
+      className={`fixed z-50 bg-white w-full transition-all duration-300 px-8 md:px-16 py-3 font-elms font-momo shadow`}
     >
       <div className="flex justify-between">
         <Link href="/" className="flex items-center gap-4">
@@ -66,6 +81,7 @@ export default function Navbar() {
               ></span>
             </Link>
           ))}
+          <LanguageSwitcher />
         </nav>
         {/* Mobile Menu (Hamburger Button) */}
         <button className="md:hidden cursor-pointer" onClick={toggleMenu}>
@@ -75,6 +91,9 @@ export default function Navbar() {
 
       {/* Mobile Nav */}
       <AnimatePresence>
+        <MobileMenu handleMenu={handleMenu} menuOpen={menuOpen} />
+      </AnimatePresence>
+      {/* <AnimatePresence>
         {menuOpen && (
           <motion.nav
             initial={{ opacity: 0, height: 0 }}
@@ -96,7 +115,7 @@ export default function Navbar() {
             ))}
           </motion.nav>
         )}
-      </AnimatePresence>
+      </AnimatePresence> */}
     </header>
   );
 }

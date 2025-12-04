@@ -1,0 +1,67 @@
+{
+  "Homepage": {
+    "vision_title": "Visi",
+    "vision_content": "Menjadi lembaga vokasi terkemuka yang menghasilkan lulusan berkualitas tinggi, inovatif, dan memiliki keahlian serta keterampilan yang sesuai dengan kebutuhan industri nasional dan global.",
+    "vision_description": "Visi ini menjadi dasar dalam setiap langkah pengembangan lembaga, menumbuhkan semangat profesionalisme dan inovasi agar mampu bersaing di era global.",
+    "mission_title": "Misi",
+    "mission_content": [
+      {
+        "content": "1. Menyediakan pelatihan berkualitas tinggi berbasis standar industri nasional dan internasional untuk menciptakan tenaga kerja yang terampil dan kompeten."
+      },
+      {
+        "content": "2. Mengembangkan program pelatihan berbasis praktik dengan pendekatan hands-on dan pengalaman langsung di industri pariwisata dan ekonomi kreatif."
+      },
+      {
+        "content": "3. Menjalin kemitraan strategis dengan industri pariwisata, hotel, restoran, dan agen perjalanan guna memperluas peluang kerja bagi lulusan."
+      },
+      {
+        "content": "4. Mendorong inovasi dan kewirausahaan di bidang pariwisata dengan membekali peserta pelatihan keterampilan bisnis dan digital."
+      },
+      {
+        "content": "5. Menanamkan nilai etika, keramahan, dan profesionalisme sebagai fondasi utama dalam membangun tenaga kerja unggul di sektor pariwisata."
+      },
+      {
+        "content": "6. Mendukung pengembangan pariwisata berkelanjutan dengan mengajarkan praktik ramah lingkungan berbasis budaya lokal."
+      }
+    ],
+    "about_title": "Tentang RIC Bali",
+    "about_content": [
+      "<strong>Rising International College (RIC)</strong> Bali Jembrana merupakan lembaga pelatihan kerja yang berada di bawah naungan <strong>Yayasan Tridaya Santana Loka.</strong><br/><br/>Berdiri pada <strong>2 Mei 2025</strong>, RIC Bali hadir dengan komitmen untuk mencetak generasi muda yang terampil, inovatif, dan siap bersaing di dunia kerja, khususnya di sektor <strong>pariwisata, perhotelan, dan ekonomi kreatif.</strong><br/><br/>Dengan dukungan tenaga pengajar profesional dan pembelajaran berbasis praktik, RIC Bali bertekad menjadi lembaga vokasi unggulan yang memberikan kontribusi nyata bagi kemajuan pendidikan di Indonesia."
+    ],
+    "about_button": "Selengkapnya",
+    "cabang_title": "Cabang Kami",
+    "cabang_description": "RIC Bali memiliki dua cabang yang siap melayani kebutuhan pendidikan dan pelatihan di bidang pariwisata dengan fasilitas lengkap dan akses yang mudah dijangkau.",
+    "cabang_button": "Lihat di Google Maps",
+    "programs": {
+      "sectionTitle": "Program Studi",
+      "sectionDescription": "RIC Bali Jembrana menawarkan program <basic>Basic Level (D1)</basic> dan <middle>Middle Level (D2)</middle> untuk mempersiapkan peserta menjadi tenaga profesional siap kerja di industri perhotelan dan pariwisata.",
+      "housekeeping": {
+        "title": "Housekeeping",
+        "description": "Pelatihan dasar dalam manajemen kebersihan, tata ruang, dan pelayanan kamar sesuai standar industri perhotelan."
+      },
+      "fb_service": {
+        "title": "FB Service",
+        "description": "Mempelajari teknik pelayanan makanan dan minuman dengan profesionalisme dan standar internasional."
+      },
+      "culinary": {
+        "title": "Culinary",
+        "description": "Pelatihan praktik memasak modern dan tradisional, serta penguasaan dapur dengan standar industri kuliner global."
+      },
+      "room_division": {
+        "title": "Room Division (Housekeeping & Front Office)",
+        "description": "Program jenjang D2 yang menggabungkan kompetensi Housekeeping dan Front Office untuk mempersiapkan tenaga ahli di divisi kamar hotel."
+      },
+      "fb_division": {
+        "title": "FB Division (FB Service & Culinary)",
+        "description": "Program D2 yang mengintegrasikan keahlian pelayanan makanan-minuman dan keterampilan memasak profesional di industri perhotelan."
+      }
+    },
+    "levels": {
+      "basic": "Basic Level",
+      "middle": "Middle Level"
+    },
+    "CTA_title": "Wujudkan Masa Depanmu Bersama <primary>RIC Bali</primary>",
+    "CTA_description": "Bergabunglah dalam pelatihan vokasi unggulan kami dan raih keterampilan yang dibutuhkan dunia industri modern.",
+    "CTA_button": "Daftar Sekarang"
+  }
+}

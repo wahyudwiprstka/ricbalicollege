@@ -1,8 +1,10 @@
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import WhatsappPopup from "./components/WhatsappPopup";
+import { NextIntlClientProvider } from "next-intl";
+import { defaultLocale } from "@/i18n/i18n";
 import "./globals.css";
-import ParallaxProviderWrapper from "./providers/ParallaxProviderWrapper";
+import { cookies } from "next/headers";
 
 export const metadata = {
   title: "RIC Bali",
@@ -12,18 +14,25 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const cookieStore = await cookies();
+  const locale = cookieStore.get("locale")?.value || defaultLocale;
+
+  const translation = (await import(`@/app/locales/${locale}/translation.json`))
+    .default;
   return (
     <html lang="id">
       <body className="min-h-screen flex flex-col">
-        <Navbar />
-        <main className="flex-1 mt-22">{children}</main>
-        <WhatsappPopup />
-        <Footer />
+        <NextIntlClientProvider locale={locale} messages={translation}>
+          <Navbar />
+          <main className="flex-1 mt-22">{children}</main>
+          <WhatsappPopup />
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

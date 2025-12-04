@@ -8,13 +8,15 @@ import CTASection from "./components/Homepage/CTA";
 import Footer from "./components/Footer";
 import WhatsappPopup from "./components/WhatsappPopup";
 import CabangKami from "./components/Homepage/Cabang";
+import Hero from "./components/Homepage/Hero";
 
 export default async function HomePage() {
   const profile = await client.fetch(profileQuery);
 
   return (
     <main>
-      <HeroSlider />
+      <Hero />
+      {/* <HeroSlider /> */}
       <VisionMission />
       <AboutSection />
       <CabangKami />

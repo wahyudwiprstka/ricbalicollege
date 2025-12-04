@@ -1,8 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
 import { MapPin } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function CabangKami() {
+  const t = useTranslations("Homepage");
   const branches = [
     {
       name: "RIC Bali – Jembrana",
@@ -33,11 +35,11 @@ export default function CabangKami() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl font-bold text-gray-800 mb-3">Cabang Kami</h2>
+          <h2 className="text-4xl font-black text-primary uppercase mb-3">
+            {t("cabang_title")}
+          </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            RIC Bali memiliki dua cabang yang siap melayani kebutuhan pendidikan
-            dan pelatihan di bidang pariwisata dengan fasilitas lengkap dan
-            akses yang mudah dijangkau.
+            {t("cabang_description")}
           </p>
         </motion.div>
 
@@ -75,7 +77,7 @@ export default function CabangKami() {
                   target="_blank"
                   className="inline-block bg-primary text-white px-4 py-2 rounded-xl hover:bg-red-900 transition"
                 >
-                  Lihat di Google Maps
+                  {t("cabang_button")}
                 </a>
               </div>
             </motion.div>

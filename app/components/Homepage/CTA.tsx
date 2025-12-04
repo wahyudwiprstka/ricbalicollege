@@ -1,8 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 export default function CTASection() {
+  const t = useTranslations("Homepage");
   return (
     <section className="relative overflow-hidden bg-linear-to-r text-black py-20 px-6">
       {/* Background pattern */}
@@ -16,20 +18,18 @@ export default function CTASection() {
         className="relative max-w-4xl mx-auto text-center"
       >
         <h2 className="text-3xl md:text-4xl font-bold mb-4 leading-snug">
-          Wujudkan Masa Depanmu Bersama{" "}
-          <span className="text-primary">RIC Bali</span>
+          {t.rich("CTA_title", {
+            primary: (chunk) => <span className="text-primary">{chunk}</span>,
+          })}
         </h2>
-        <p className="text-lg text-gray-800 mb-8">
-          Bergabunglah dalam pelatihan vokasi unggulan kami dan raih
-          keterampilan yang dibutuhkan dunia industri modern.
-        </p>
+        <p className="text-lg text-gray-800 mb-8">{t("CTA_description")}</p>
 
         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.97 }}>
           <Link
             href="/pendaftaran"
             className="inline-block bg-primary text-white font-semibold px-8 py-3 rounded-full shadow-md hover:bg-red-950 transition-all duration-300"
           >
-            Daftar Sekarang
+            {t("CTA_button")}
           </Link>
         </motion.div>
       </motion.div>

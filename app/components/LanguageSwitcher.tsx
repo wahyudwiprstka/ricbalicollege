@@ -10,17 +10,14 @@ import { ChevronDown, LanguagesIcon } from "lucide-react";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
-const LanguageSwitcher = () => {
+const LanguageSwitcher = ({
+  changeLanguage,
+  locale,
+}: {
+  changeLanguage: any;
+  locale: string | undefined;
+}) => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const locale = document.cookie
-    .split("; ")
-    .find((row) => row.startsWith("locale="))
-    ?.split("=")[1];
-
-  const changeLanguage = (locale: string) => {
-    document.cookie = `locale=${locale}; path=/`;
-    window.location.reload();
-  };
 
   return (
     <div onMouseLeave={() => setMenuOpen(false)}>

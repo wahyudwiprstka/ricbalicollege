@@ -18,7 +18,7 @@ import { getUserLocale, setUserLocale } from "@/lib/locale";
 import LanguageSwitcher from "./LanguageSwitcher";
 import MobileMenu from "./MobileMenu";
 
-const navItems = [
+const navItemsID = [
   { name: "Home", path: "/" },
   { name: "Program Jurusan", path: "/jurusan" },
   { name: "Tentang", path: "/about" },
@@ -28,10 +28,40 @@ const navItems = [
   { name: "Kontak", path: "/contact" },
 ];
 
+const navItemsEN = [
+  { name: "Home", path: "/" },
+  { name: "Study Program", path: "/jurusan" },
+  { name: "About", path: "/about" },
+  { name: "News", path: "/news" },
+  { name: "Instructors", path: "/instructors" },
+  { name: "Enrollment", path: "/pendaftaran" },
+  { name: "Contact", path: "/contact" },
+];
+
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
+
+  const locale = document.cookie
+    .split("; ")
+    .find((row) => row.startsWith("locale="))
+    ?.split("=")[1];
+
+  const changeLanguage = (locale: string) => {
+    document.cookie = `locale=${locale}; path=/`;
+    window.location.reload();
+  };
+
+  let navItems = navItemsEN;
+
+  if (locale == "id") {
+    navItems = navItemsID;
+  } else if (locale == "en") {
+    navItems = navItemsEN;
+  } else {
+    navItems = navItemsEN;
+  }
 
   const handleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -81,7 +111,7 @@ export default function Navbar() {
               ></span>
             </Link>
           ))}
-          <LanguageSwitcher />
+          <LanguageSwitcher changeLanguage={changeLanguage} locale={locale} />
         </nav>
         {/* Mobile Menu (Hamburger Button) */}
         <button className="md:hidden cursor-pointer" onClick={toggleMenu}>

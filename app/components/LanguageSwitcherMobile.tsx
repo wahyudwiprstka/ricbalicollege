@@ -6,16 +6,10 @@ const LanguageSwitcherMobile = ({
   languageOpen,
   closeLanguage,
   handleMenu,
+  locale,
+  changeLanguage
 }: any) => {
-  const locale = document.cookie
-    .split("; ")
-    .find((row) => row.startsWith("locale="))
-    ?.split("=")[1];
-
-  const changeLanguage = (locale: string) => {
-    document.cookie = `locale=${locale}; path=/`;
-    window.location.reload();
-  };
+  
   return (
     <>
       <AnimatePresence>

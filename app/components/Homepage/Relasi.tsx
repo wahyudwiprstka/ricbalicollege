@@ -62,7 +62,7 @@ const Relasi = () => {
     visible: { opacity: 1, y: 0 },
   };
   return (
-    <section className="py-16 bg-slate-100">
+    <section className="py-16 bg-slate-100 max-w-screen">
       <motion.div
         variants={containerVariants}
         initial="hidden"
@@ -79,7 +79,7 @@ const Relasi = () => {
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          className="flex items-center justify-center flex-wrap gap-10 px-36"
+          className="flex items-center justify-center flex-wrap gap-10 px-12 md:px-36"
         >
           {relations.map((item, index) => (
             <motion.img

@@ -25,7 +25,7 @@ export default function CabangKami() {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-slate-900 rounded-t-4xl">
       <div className="max-w-6xl mx-auto px-6">
         {/* Title */}
         <motion.div
@@ -35,10 +35,10 @@ export default function CabangKami() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl font-black text-primary uppercase mb-3">
+          <h2 className="text-4xl font-black text-white uppercase mb-3">
             {t("cabang_title")}
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <p className="text-gray-400 max-w-2xl mx-auto">
             {t("cabang_description")}
           </p>
         </motion.div>

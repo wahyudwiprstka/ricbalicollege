@@ -10,7 +10,7 @@ const Hero = ({
   description: string;
 }) => {
   return (
-    <section className="bg-linear-to-r from-rose-950 to-red-900 text-white py-20 px-6 text-center">
+    <section className="bg-linear-to-br from-red-800 to-red-900 text-white py-20 px-6 text-center">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}

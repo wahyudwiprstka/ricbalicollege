@@ -1,14 +1,13 @@
 import { client } from "@/app/lib/sanity.client";
 import { profileQuery } from "@/app/lib/queries";
-import HeroSlider from "./components/Homepage/HeroSlider";
 import VisionMission from "./components/Homepage/visionMission";
 import AboutSection from "./components/Homepage/AboutSection";
 import ProgramStudi from "./components/Homepage/Prodi";
 import CTASection from "./components/Homepage/CTA";
-import Footer from "./components/Footer";
-import WhatsappPopup from "./components/WhatsappPopup";
 import CabangKami from "./components/Homepage/Cabang";
 import Hero from "./components/Homepage/Hero";
+import Sponsor from "./components/Homepage/Sponsor";
+import Relasi from "./components/Homepage/Relasi";
 
 export default async function HomePage() {
   const profile = await client.fetch(profileQuery);
@@ -16,11 +15,12 @@ export default async function HomePage() {
   return (
     <main>
       <Hero />
-      {/* <HeroSlider /> */}
       <VisionMission />
       <AboutSection />
       <CabangKami />
       <ProgramStudi />
+      <Sponsor />
+      <Relasi />
       <CTASection />
     </main>
   );

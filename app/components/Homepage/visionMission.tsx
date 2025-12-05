@@ -15,7 +15,7 @@ export default function VisiMisiPage() {
     content: string;
   }[];
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-6 py-16">
+    <section className="min-h-screen flex flex-col items-center justify-center px-6 py-16 bg-slate-100">
       {/* Judul */}
       <motion.img
         src={`${

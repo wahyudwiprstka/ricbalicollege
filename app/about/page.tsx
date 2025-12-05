@@ -5,7 +5,7 @@ import Hero from "../components/Hero";
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-linear-to-b from-[#FFF8F8] to-[#FDECEC] text-gray-800">
+    <main className="min-h-screen bg-slate-100 text-gray-800">
       {/* Section 1 - Header */}
       <Hero
         title="Tentang RIC College"

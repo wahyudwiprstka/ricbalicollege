@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Autoplay, EffectFade, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { motion } from "framer-motion";
 
 import "swiper/css";
 import "swiper/css/effect-fade";
@@ -33,9 +34,13 @@ const Hero = () => {
   return (
     <section className="w-full relative overflow-hidden">
       {/* TEXT LAYER */}
-      <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-20 flex items-center justify-center text-center px-6">
+      <motion.div
+        initial={{ opacity: 0, y: 10 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-20 flex items-center justify-center text-center px-6"
+      >
         <div className="max-w-6xl space-y-6">
-          <h1 className="font-light leading-tight text-white text-2xl md:text-5xl tracking-wide drop-shadow-lg">
+          <h1 className="font-light leading-tight text-white text-xl md:text-5xl tracking-wide drop-shadow-lg">
             {heroItems[activeIndex].heading}
             <br />
             <span className="font-black">
@@ -45,7 +50,7 @@ const Hero = () => {
 
           <span className="block mx-auto w-24 md:w-52 h-1 bg-linear-to-r from-white/10 via-white to-white/10" />
 
-          <p className="text-white/90 text-base md:text-xl max-w-2xl mx-auto leading-relaxed">
+          <p className="text-white/90 text-base md:text-xl max-w-xl mx-auto leading-relaxed">
             {heroItems[activeIndex].description}
           </p>
 
@@ -53,7 +58,7 @@ const Hero = () => {
             Explore Programs
           </button>
         </div>
-      </div>
+      </motion.div>
 
       {/* SWIPER */}
       <Swiper

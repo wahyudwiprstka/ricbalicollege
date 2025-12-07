@@ -1,30 +1,27 @@
+"use client";
+
 import ProdiDetails from "@/app/components/jurusan/jurusanDetails";
 import { client } from "@/app/lib/sanity.client";
-import { motion } from "framer-motion";
-import Image from "next/image";
-import Link from "next/link";
+import { getLocale } from "@/lib/localeClient";
+import JurusanID from "@/app/jurusan/jurusanID.json";
+import JurusanEN from "@/app/jurusan/jurusanEN.json";
+import { useParams } from "next/navigation";
 
-export default async function DetailProgram({
-  params,
-}: {
-  params: { slug: string };
-}) {
-  const query = `*[_type=='program' && slug.current == $slug][0]{
-      title,
-      slug,
-      level,
-      description,
-      objective,
-      kurikulum,
-      image{
-        asset -> {url},
-        alt
-      }
-    }`;
+export default function DetailProgram() {
+  const { slug } = useParams<{ slug: string }>();
 
-  const { slug } = await params;
-
-  const program = await client.fetch(query, { slug });
+  const locale = getLocale();
+  const getPrograms = (locale: string | undefined) => {
+    if (locale == "id") {
+      return JurusanID;
+    } else if (locale == "en") {
+      return JurusanEN;
+    } else {
+      return JurusanEN;
+    }
+  };
+  const programs = getPrograms(locale);
+  const program = programs.jurusan.find((p) => p.slug == slug);
   if (!program) {
     return (
       <div className="min-h-screen flex items-center justify-center text-center text-gray-600">
@@ -35,7 +32,7 @@ export default async function DetailProgram({
 
   return (
     <>
-      <ProdiDetails program={program} />
+      <ProdiDetails programs={programs} program={program} />
     </>
   );
 }

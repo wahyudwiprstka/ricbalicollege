@@ -61,11 +61,13 @@
       "middle": "Middle Level"
     },
     "sponsor_title": "Sponsor Kami",
-    "sponsor_description": "Kami dengan bangga memperkenalkan bahwa <strong>Cultural Homestay International (CHI)</strong> adalah sponsor resmi untuk program ini, yang menyediakan dukungan serta dokumentasi yang diperlukan selama pengalaman magang/pelatihan Anda.",
-    "relation_title": "Relasi Kami",
-    "relation_description": "Kami juga bekerja sama dengan beberapa mitra terpercaya yang mendukung dan berkontribusi terhadap keberhasilan program ini, sehingga dapat memastikan peluang dan pengalaman terbaik bagi para mahasiswa.",
+    "partner_title": "Partner Kami",
     "CTA_title": "Wujudkan Masa Depanmu Bersama <primary>RIC Bali</primary>",
     "CTA_description": "Bergabunglah dalam pelatihan vokasi unggulan kami dan raih keterampilan yang dibutuhkan dunia industri modern.",
     "CTA_button": "Daftar Sekarang"
+  },
+  "Prodi": {
+    "prodi_title": "Program Jurusan",
+    "prodi_description": "Temukan berbagai pilihan jurusan unggulan yang dirancang untuk membentuk generasi profesional, kreatif, dan berdaya saing global."
   }
 }

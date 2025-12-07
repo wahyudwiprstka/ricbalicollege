@@ -10,7 +10,7 @@ import {
   Key,
 } from "react";
 
-const ProdiDetails = ({ program }: any) => {
+const ProdiDetails = ({ program, programs }: any) => {
   return (
     <section className="relative py-20 bg-gray-50">
       <div className="max-w-6xl mx-auto px-6">
@@ -23,7 +23,7 @@ const ProdiDetails = ({ program }: any) => {
           <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-xl">
             <Image
               src={program?.image?.asset?.url}
-              alt={program?.title}
+              alt={program?.name}
               fill
               className="object-cover hover:scale-105 transition-transform duration-700"
             />
@@ -31,27 +31,27 @@ const ProdiDetails = ({ program }: any) => {
 
           <div>
             <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-              {program?.title}
+              {program?.name}
             </h1>
             <p className="text-gray-700 leading-relaxed mb-6">
               {program?.description}
             </p>
 
             <h2 className="text-2xl font-semibold text-primary mb-3">
-              Tujuan Program
+              {programs.objective_title}
             </h2>
             <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
-              {program?.objective?.map((obj: string, i: Key) => (
-                <li key={i}>{obj}</li>
+              {program?.objective?.map((obj: any, i: Key) => (
+                <li key={i}>{obj?.name}</li>
               ))}
             </ul>
 
             <h2 className="text-2xl font-semibold text-primary mb-3">
-              Kurikulum Singkat
+              {programs.curriculum_title}
             </h2>
             <ul className="list-decimal list-inside space-y-2 text-gray-700 mb-8">
-              {program?.kurikulum?.map((item: string, i: Key) => (
-                <li key={i}>{item}</li>
+              {program?.curriculum?.map((item: any, i: Key) => (
+                <li key={i}>{item.name}</li>
               ))}
             </ul>
 

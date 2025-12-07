@@ -1,0 +1,145 @@
+{
+    "title": "Program Jurusan",
+    "description": "Temukan berbagai pilihan jurusan unggulan yang dirancang untuk membentuk generasi profesional, kreatif, dan berdaya saing global.",
+    "objective_title": "Tujuan Program",
+    "curriculum_title": "Kurikulum Singkat",
+    "jurusan": [
+        {
+            "name": "House Keeping",
+            "slug": "housekeeping",
+            "description": "Program House Keeping (Basic Level / D1) dirancang untuk membekali peserta dengan keterampilan dasar dalam menjaga kebersihan, kerapian, dan kenyamanan kamar serta area publik di sebuah hotel. Peserta akan mempelajari standar internasional dalam penataan kamar, penggunaan peralatan kebersihan, pengelolaan linen, hingga teknik komunikasi dasar dengan tamu. Program ini sangat cocok bagi calon profesional yang ingin berkarier sebagai room attendant atau housekeeping staff di industri perhotelan.",
+            "level": "basic",
+            "objective": [
+                { "name": "Memahami standar kebersihan dan sanitasi sesuai industri perhotelan." },
+                { "name": "Menguasai teknik penataan dan pembersihan kamar (room cleaning)." },
+                { "name": "Mampu menggunakan perlengkapan dan bahan pembersih dengan benar dan aman." },
+                { "name": "Memahami prosedur pengelolaan linen, amenities, dan inventaris housekeeping." },
+                { "name": "Mengembangkan sikap disiplin, teliti, dan berorientasi pada detail." },
+                { "name": "Mampu melakukan komunikasi dasar dengan tamu dan sesama tim." },
+                { "name": "Siap bekerja sebagai room attendant atau housekeeping staff tingkat dasar." }
+            ],
+            "curriculum": [
+                { "name": "Pengenalan Housekeeping" },
+                { "name": "Kebersihan & Sanitasi" },
+                { "name": "Room Attendant Skills" },
+                { "name": "Public Area Cleaning" },
+                { "name": "Linen & Laundry Handling" },
+                { "name": "Guest Interaction" },
+                { "name": "Assessment" }
+            ]
+        },
+        {
+            "name": "Food & Beverage (FB) Service",
+            "slug": "fb-service",
+            "description": "Program FB Service (Basic Level / D1) memberikan pemahaman menyeluruh mengenai layanan makanan dan minuman di hotel, restoran, maupun kafe. Peserta akan dilatih untuk memahami teknik pelayanan dasar, table setup, penyajian makanan dan minuman, hingga etika pelayanan yang baik. Dengan pendekatan praktik dan teori, peserta dipersiapkan untuk menjadi waiter/waitress profesional yang mampu memberikan pengalaman terbaik bagi setiap tamu.",
+            "level": "basic",
+            "objective": [
+                { "name": "Memahami dasar-dasar pelayanan makanan dan minuman di restoran atau hotel." },
+                { "name": "Menguasai teknik table setup, table manners, dan tata cara pelayanan tamu." },
+                { "name": "Mampu menyajikan makanan dan minuman sesuai SOP yang berlaku." },
+                { "name": "Memahami jenis-jenis menu, peralatan servis, dan prosedur kerja." },
+                { "name": "Mengembangkan kemampuan komunikasi yang sopan dan efektif kepada tamu." },
+                { "name": "Mampu menangani komplain dasar dengan etika yang baik." },
+                { "name": "Siap bekerja sebagai waiter/waitress atau staff FB Service tingkat dasar." }
+            ],
+            "curriculum": [
+                { "name": "Pengenalan F&B Service" },
+                { "name": "Table Setup & Equipment" },
+                { "name": "Service Techniques" },
+                { "name": "Menu Knowledge" },
+                { "name": "Customer Service & Hospitality" },
+                { "name": "Safety & Hygiene" },
+                { "name": "Assessment" }
+            ]
+        },
+        {
+            "name": "Culinary",
+            "slug": "culinary",
+            "description": "Program Culinary (Basic Level / D1) dirancang untuk melatih dasar-dasar teknik memasak profesional sesuai standar industri. Peserta akan mempelajari pengetahuan dapur, pengolahan bahan makanan, teknik pemotongan, pengendalian kebersihan dan sanitasi, serta berbagai metode memasak. Program ini menyiapkan peserta untuk menjadi calon cook atau kitchen staff yang kompeten dan siap bekerja di berbagai bidang kuliner seperti hotel, restoran, maupun kapal pesiar.",
+            "level": "basic",
+            "objective": [
+                { "name": "Menguasai teknik dasar memasak seperti boiling, grilling, sautéing, dan frying." },
+                { "name": "Memahami pengetahuan dapur, termasuk hygiene, sanitasi, dan food safety." },
+                { "name": "Mampu mengolah berbagai bahan makanan dengan teknik pemotongan yang tepat." },
+                { "name": "Memahami penggunaan peralatan dapur dan pengelolaan mise en place." },
+                { "name": "Mampu membaca resep, menakar bahan, serta menyajikan hidangan dengan standar profesional." },
+                { "name": "Mengembangkan kreativitas dan disiplin kerja di lingkungan dapur." },
+                { "name": "Siap bekerja sebagai cook helper atau kitchen staff tingkat dasar." }
+            ],
+            "curriculum": [
+                { "name": "Basic Kitchen Knowledge" },
+                { "name": "Basic Knife Skills" },
+                { "name": "Food Preparation (Mise en Place)" },
+                { "name": "Basic Cooking Methods" },
+                { "name": "Basic Sauces" },
+                { "name": "Western & Asian Cuisine Basics" },
+                { "name": "Assessment" }
+            ]
+        },
+        {
+            "name": "Room Division (Housekeeping & Front Office)",
+            "slug": "room-division",
+            "description": "Program Room Division (Middle Level / D2) dirancang untuk mencetak tenaga profesional yang memiliki kompetensi mendalam di bidang Housekeeping dan Front Office. Peserta akan mempelajari standar operasional hotel berbintang, teknik pelayanan tamu, manajemen kamar, pengelolaan linen, hingga penguasaan sistem administrasi dan operasional resepsionis modern. Program ini mempersiapkan lulusan yang siap bekerja pada posisi supervisi awal di hotel maupun industri akomodasi lainnya.",
+            "level": "middle",
+            "objective": [
+                { "name": "Memahami struktur, fungsi, dan alur kerja Room Division secara menyeluruh." },
+                { "name": "Menguasai teknik housekeeping tingkat menengah hingga lanjutan." },
+                { "name": "Mampu menangani operasional front office dengan standar internasional." },
+                { "name": "Menguasai penggunaan Property Management System (PMS)." },
+                { "name": "Mampu menangani tamu (guest handling) secara profesional." },
+                { "name": "Mampu mengelola inventory, linen, dan peralatan operasional." },
+                { "name": "Mampu melakukan koordinasi lintas departemen secara efektif." },
+                { "name": "Siap bekerja pada posisi Room Attendant Senior, Front Desk Agent, atau Room Division Supervisor Trainee." }
+            ],
+            "curriculum": [
+                { "name": "Advanced Room Cleaning Procedures" },
+                { "name": "Public Area Advanced Practices" },
+                { "name": "Linen & Laundry Management" },
+                { "name": "Floor Supervisory Skills" },
+                { "name": "Lost & Found Management" },
+                { "name": "Guest Room Inspection Techniques" },
+                { "name": "Housekeeping Report & Documentation" },
+                { "name": "Reservation Procedure & Management" },
+                { "name": "Check-in / Check-out Process" },
+                { "name": "Handling Guest Complaint (Advanced Level)" },
+                { "name": "Night Audit Basic" },
+                { "name": "Cashiering & Billing" },
+                { "name": "Telephone Etiquette & Call Handling" },
+                { "name": "PMS Operation (Fidelio, Opera, atau sejenisnya)" }
+            ]
+        },
+        {
+            "name": "FB Division (FB Service & Culinary)",
+            "slug": "fb-division",
+            "description": "Program FB Division (Middle Level / D2) merupakan pelatihan terintegrasi yang menggabungkan kompetensi Food & Beverage Service dan Culinary. Peserta akan mempelajari teknik penyajian makanan tingkat menengah, table manner, barista basic, bartending basic (non-alkohol bila diperlukan), hingga teknik memasak internasional. Program ini bertujuan menyiapkan tenaga terampil yang siap ditempatkan pada posisi operasional maupun supervisi awal di restoran, café, hotel, dan industri kuliner.",
+            "level": "middle",
+            "objective": [
+                { "name": "Menguasai teknik pelayanan makanan dan minuman sesuai standar industri." },
+                { "name": "Mampu melakukan penataan meja (table setup) dan table service profesional." },
+                { "name": "Memahami product knowledge makanan & minuman." },
+                { "name": "Menguasai dasar-dasar western & asian cooking." },
+                { "name": "Mampu mengolah bahan makanan secara efisien dan higienis." },
+                { "name": "Mampu melakukan koordinasi dapur dan restoran." },
+                { "name": "Mampu menangani pelanggan (customer handling) dengan baik." },
+                { "name": "Siap bekerja sebagai Waiter Senior, Commis, atau FB Supervisor Trainee." }
+            ],
+            "curriculum": [
+                { "name": "Service Sequence (Intermediate – Advanced)" },
+                { "name": "Table Setup (Breakfast, Lunch, Dinner)" },
+                { "name": "Banquet Service Basic" },
+                { "name": "Basic Barista Skills" },
+                { "name": "Beverage Knowledge (Juice, Mocktail, Tea, Coffee)" },
+                { "name": "Handling Guest Complaint" },
+                { "name": "Restaurant Cashiering & POS System" },
+                { "name": "Basic Knife Skills (Advanced Practice)" },
+                { "name": "Soup, Sauce & Stock Preparation" },
+                { "name": "Basic to Intermediate Western Cuisine" },
+                { "name": "Indonesian Cuisine" },
+                { "name": "Cold Kitchen Preparation" },
+                { "name": "Hot Kitchen Operation" },
+                { "name": "Food Safety & Hygiene (Intermediate Level)" },
+                { "name": "Kitchen Inventory & Cost Control Basic" }
+            ]
+        }
+    ]
+}

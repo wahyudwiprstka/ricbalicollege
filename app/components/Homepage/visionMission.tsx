@@ -28,14 +28,14 @@ export default function VisiMisiPage() {
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="w-60 font-bold text-center text-[#711a1a]"
+        className="w-46 md:w-60 font-bold text-center text-[#711a1a]"
       ></motion.img>
 
       <motion.div
         initial={{ width: 0 }}
         whileInView={{ width: 80 }}
         transition={{ duration: 0.6 }}
-        className="h-0.5 mb-4 bg-primary"
+        className="h-0.5 bg-primary mb-8 mt-4"
       />
 
       {/* Container */}

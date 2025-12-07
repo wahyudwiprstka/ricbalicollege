@@ -3,8 +3,14 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 const Program = ({ programs }: any) => {
-  const basicPrograms = programs.filter((p: any) => p.level === "basic");
-  const middlePrograms = programs.filter((p: any) => p.level === "middle");
+  const basicPrograms = programs.jurusan.filter(
+    (p: any) => p.level === "basic"
+  );
+  const middlePrograms = programs.jurusan.filter(
+    (p: any) => p.level === "middle"
+  );
+
+  console.log(basicPrograms);
 
   return (
     <div>
@@ -24,12 +30,12 @@ const Program = ({ programs }: any) => {
             >
               <img
                 src={program?.image?.asset?.url}
-                alt={program?.title}
+                alt={program?.name}
                 className="h-48 w-full object-cover"
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-800">
-                  {program?.title}
+                  {program?.name}
                 </h3>
                 <p className="text-sm text-primary font-medium mb-2">
                   Basic Level
@@ -38,7 +44,7 @@ const Program = ({ programs }: any) => {
                   {program.description}
                 </p>
                 <Link
-                  href={`/jurusan/${program.slug.current}`}
+                  href={`/jurusan/${program.slug}`}
                   className="bg-primary text-white px-4 py-2 rounded-xl hover:bg-red-950 transition-all"
                 >
                   Lihat Detail
@@ -64,12 +70,12 @@ const Program = ({ programs }: any) => {
             >
               <img
                 src={program?.image?.asset?.url}
-                alt={program?.title}
+                alt={program?.name}
                 className="h-48 w-full object-cover"
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-800">
-                  {program?.title}
+                  {program?.name}
                 </h3>
                 <p className="text-sm text-primary font-medium mb-2">
                   Middle Level
@@ -78,7 +84,7 @@ const Program = ({ programs }: any) => {
                   {program.description}
                 </p>
                 <Link
-                  href={`/jurusan/${program.slug.current}`}
+                  href={`/jurusan/${program.slug}`}
                   className="bg-primary text-white px-4 py-2 rounded-xl hover:bg-red-950 transition-all"
                 >
                   Lihat Detail

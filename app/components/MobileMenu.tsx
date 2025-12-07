@@ -6,9 +6,10 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 import LanguageSwitcher from "./LanguageSwitcher";
 import LanguageSwitcherMobile from "./LanguageSwitcherMobile";
+import { getLocale } from "@/lib/localeClient";
 
 const MobileMenu = ({ handleMenu, menuOpen }: any) => {
-  const navItems = [
+  const navItemsID = [
     { name: "Home", path: "/" },
     { name: "Program Jurusan", path: "/jurusan" },
     { name: "Tentang", path: "/about" },
@@ -17,15 +18,28 @@ const MobileMenu = ({ handleMenu, menuOpen }: any) => {
     { name: "Pendaftaran", path: "/pendaftaran" },
     { name: "Kontak", path: "/contact" },
   ];
+
+  const navItemsEN = [
+    { name: "Home", path: "/" },
+    { name: "Study Program", path: "/jurusan" },
+    { name: "About", path: "/about" },
+    { name: "News", path: "/news" },
+    { name: "Instructors", path: "/instructors" },
+    { name: "Enrollment", path: "/pendaftaran" },
+    { name: "Contact", path: "/contact" },
+  ];
   const [languageOpen, setLanguageOpen] = useState(false);
   const closeLanguage = () => {
     setLanguageOpen(false);
   };
   const pathname = usePathname();
-  const changeLanguage = (locale: string) => {
-    document.cookie = `locale=${locale}; path=/`;
-    window.location.reload();
-  };
+  let navItems = navItemsEN;
+  const locale = getLocale();
+  if (locale == "id") {
+    navItems = navItemsID;
+  } else if (locale == "en") {
+    navItems = navItemsEN;
+  }
 
   return (
     <>
@@ -77,7 +91,8 @@ const MobileMenu = ({ handleMenu, menuOpen }: any) => {
                       onClick={() => setLanguageOpen(true)}
                       className="flex items-center gap-2 py-3 font-black text-2xl uppercase text-gray-600 hover:text-primary cursor-pointer"
                     >
-                      Language <ChevronRight />
+                      {locale == "id" ? "Bahasa" : "Language"}
+                      <ChevronRight />
                     </button>
                   </li>
                 </ul>
@@ -90,6 +105,7 @@ const MobileMenu = ({ handleMenu, menuOpen }: any) => {
               languageOpen={languageOpen}
               closeLanguage={closeLanguage}
               handleMenu={handleMenu}
+              locale={locale}
             />
           </div>
         )}

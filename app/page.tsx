@@ -7,7 +7,7 @@ import CTASection from "./components/Homepage/CTA";
 import CabangKami from "./components/Homepage/Cabang";
 import Hero from "./components/Homepage/Hero";
 import Sponsor from "./components/Homepage/Sponsor";
-import Relasi from "./components/Homepage/Relasi";
+import Partner from "./components/Homepage/Partner";
 
 export default async function HomePage() {
   const profile = await client.fetch(profileQuery);
@@ -20,7 +20,7 @@ export default async function HomePage() {
       <CabangKami />
       <ProgramStudi />
       <Sponsor />
-      <Relasi />
+      <Partner />
       <CTASection />
     </main>
   );

@@ -9,8 +9,9 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { getLocale } from "@/lib/localeClient";
 
-const heroItems = [
+const heroItemsEN = [
   {
     name: "Hero 1",
     path: "/img/hero/hero1.png",
@@ -27,6 +28,35 @@ const heroItems = [
     description: "Join world-class vocational training in the heart of Bali.",
   },
 ];
+
+const heroItemsID = [
+  {
+    name: "Hero 1",
+    path: "/img/hero/hero1.png",
+    heading: "SELAMAT DATANG DI",
+    highlight: "RISING INTERNATIONAL COLLEGE BALI",
+    description:
+      "Memberdayakan para profesional masa depan dengan keterampilan global yang siap industri. ",
+  },
+  {
+    name: "Hero 2",
+    path: "/img/hero/hero2.png",
+    heading: "WUJUDKAN",
+    highlight: "KARIR GLOBALMU",
+    description:
+      "bergabung dengan pelatihan vokasi kelas dunia di jantung Bali.",
+  },
+];
+
+const locale = getLocale();
+
+let heroItems = heroItemsEN;
+
+if (locale == "id") {
+  heroItems = heroItemsID;
+} else if (locale == "en") {
+  heroItems == heroItemsEN;
+}
 
 const Hero = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -54,7 +84,7 @@ const Hero = () => {
             {heroItems[activeIndex].description}
           </p>
 
-          <button className="mt-4 px-6 py-3 rounded-full bg-primary text-white font-semibold hover:bg-[#5c1b15] transition">
+          <button className="mt-4 px-6 py-3 rounded-full bg-primary text-white text-sm hover:bg-[#5c1b15] transition">
             Explore Programs
           </button>
         </div>

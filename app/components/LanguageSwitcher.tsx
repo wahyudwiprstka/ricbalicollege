@@ -9,15 +9,11 @@ import {
 import { ChevronDown, LanguagesIcon } from "lucide-react";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { changeLanguage, getLocale } from "@/lib/localeClient";
 
-const LanguageSwitcher = ({
-  changeLanguage,
-  locale,
-}: {
-  changeLanguage: any;
-  locale: string | undefined;
-}) => {
+const LanguageSwitcher = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const locale = getLocale();
 
   return (
     <div onMouseLeave={() => setMenuOpen(false)}>

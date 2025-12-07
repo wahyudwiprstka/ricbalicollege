@@ -1,4 +1,5 @@
 "use client";
+import { changeLanguage, getLocale } from "@/lib/localeClient";
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronLeft, X } from "lucide-react";
 
@@ -6,10 +7,9 @@ const LanguageSwitcherMobile = ({
   languageOpen,
   closeLanguage,
   handleMenu,
-  locale,
-  changeLanguage
 }: any) => {
-  
+  const locale = getLocale();
+
   return (
     <>
       <AnimatePresence>

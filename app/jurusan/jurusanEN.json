@@ -1,0 +1,145 @@
+{
+  "title": "Study Programs",
+  "description": "Discover a wide selection of leading majors designed to shape a generation that is professional, creative, and globally competitive.",
+  "objective_title": "Program Objectives",
+    "curriculum_title": "Brief Curriculum",
+  "jurusan": [
+    {
+      "name": "Housekeeping",
+      "slug": "housekeeping",
+      "description": "The Housekeeping Program (Basic Level / D1) is designed to equip participants with fundamental skills in maintaining cleanliness, tidiness, and comfort of guest rooms and public areas in a hotel. Participants will learn international standards for room setup, use of cleaning equipment, linen management, and basic communication techniques with guests. This program is ideal for aspiring professionals who wish to pursue a career as a room attendant or housekeeping staff in the hospitality industry.",
+      "level": "basic",
+      "objective": [
+        { "name": "Understand cleanliness and sanitation standards in accordance with the hospitality industry." },
+        { "name": "Master room arrangement and cleaning techniques (room cleaning)." },
+        { "name": "Be able to use cleaning equipment and materials correctly and safely." },
+        { "name": "Understand procedures for linen, amenities, and housekeeping inventory management." },
+        { "name": "Develop discipline, thoroughness, and strong attention to detail." },
+        { "name": "Be able to carry out basic communication with guests and team members." },
+        { "name": "Be ready to work as a room attendant or entry-level housekeeping staff." }
+      ],
+      "curriculum": [
+        { "name": "Introduction to Housekeeping" },
+        { "name": "Cleanliness & Sanitation" },
+        { "name": "Room Attendant Skills" },
+        { "name": "Public Area Cleaning" },
+        { "name": "Linen & Laundry Handling" },
+        { "name": "Guest Interaction" },
+        { "name": "Assessment" }
+      ]
+    },
+    {
+      "name": "Food & Beverage (FB) Service",
+      "slug": "fb-service",
+      "description": "The FB Service Program (Basic Level / D1) provides a comprehensive understanding of food and beverage services in hotels, restaurants, and cafés. Participants will be trained in basic service techniques, table setup, food and beverage presentation, and proper service etiquette. Through a combination of practical and theoretical approaches, participants are prepared to become professional waiters/waitresses who are able to deliver the best experience for every guest.",
+      "level": "basic",
+      "objective": [
+        { "name": "Understand the basics of food and beverage service in restaurants or hotels." },
+        { "name": "Master table setup techniques, table manners, and proper guest service procedures." },
+        { "name": "Be able to serve food and beverages in accordance with applicable SOPs." },
+        { "name": "Understand types of menus, service equipment, and work procedures." },
+        { "name": "Develop polite and effective communication skills with guests." },
+        { "name": "Be able to handle basic complaints with proper etiquette." },
+        { "name": "Be ready to work as an entry-level waiter/waitress or FB Service staff." }
+      ],
+      "curriculum": [
+        { "name": "Introduction to F&B Service" },
+        { "name": "Table Setup & Equipment" },
+        { "name": "Service Techniques" },
+        { "name": "Menu Knowledge" },
+        { "name": "Customer Service & Hospitality" },
+        { "name": "Safety & Hygiene" },
+        { "name": "Assessment" }
+      ]
+    },
+    {
+      "name": "Culinary",
+      "slug": "culinary",
+      "description": "The Culinary Program (Basic Level / D1) is designed to train participants in the fundamentals of professional cooking techniques in accordance with industry standards. Participants will learn kitchen knowledge, food preparation, cutting techniques, cleanliness and sanitation control, and various cooking methods. This program prepares participants to become competent aspiring cooks or kitchen staff ready to work in various culinary fields such as hotels, restaurants, or cruise ships.",
+      "level": "basic",
+      "objective": [
+        { "name": "Master basic cooking techniques such as boiling, grilling, sautéing, and frying." },
+        { "name": "Understand kitchen knowledge, including hygiene, sanitation, and food safety." },
+        { "name": "Be able to process various ingredients using proper cutting techniques." },
+        { "name": "Understand the use of kitchen equipment and the management of mise en place." },
+        { "name": "Be able to read recipes, measure ingredients, and present dishes to professional standards." },
+        { "name": "Develop creativity and work discipline in the kitchen environment." },
+        { "name": "Be ready to work as a cook helper or entry-level kitchen staff." }
+      ],
+      "curriculum": [
+        { "name": "Basic Kitchen Knowledge" },
+        { "name": "Basic Knife Skills" },
+        { "name": "Food Preparation (Mise en Place)" },
+        { "name": "Basic Cooking Methods" },
+        { "name": "Basic Sauces" },
+        { "name": "Western & Asian Cuisine Basics" },
+        { "name": "Assessment" }
+      ]
+    },
+    {
+      "name": "Room Division (Housekeeping & Front Office)",
+      "slug": "room-division",
+      "description": "The Room Division Program (Middle Level / D2) is designed to produce professionals with in-depth competencies in Housekeeping and Front Office operations. Participants will learn five-star hotel operational standards, guest service techniques, room management, linen handling, and the use of modern reception and administrative systems. This program prepares graduates to take on entry-level supervisory positions in hotels and other accommodation industries.",
+      "level": "middle",
+      "objective": [
+        { "name": "Understand the structure, functions, and workflow of the Room Division comprehensively." },
+        { "name": "Master intermediate to advanced housekeeping techniques." },
+        { "name": "Be able to handle front office operations in accordance with international standards." },
+        { "name": "Master the use of Property Management Systems (PMS)." },
+        { "name": "Be able to handle guests professionally (guest handling)." },
+        { "name": "Be able to manage inventory, linen, and operational equipment." },
+        { "name": "Be able to coordinate effectively across departments." },
+        { "name": "Be ready to work as a Senior Room Attendant, Front Desk Agent, or Room Division Supervisor Trainee." }
+      ],
+      "curriculum": [
+        { "name": "Advanced Room Cleaning Procedures" },
+        { "name": "Advanced Public Area Practices" },
+        { "name": "Linen & Laundry Management" },
+        { "name": "Floor Supervisory Skills" },
+        { "name": "Lost & Found Management" },
+        { "name": "Guest Room Inspection Techniques" },
+        { "name": "Housekeeping Reports & Documentation" },
+        { "name": "Reservation Procedures & Management" },
+        { "name": "Check-in / Check-out Process" },
+        { "name": "Handling Guest Complaints (Advanced Level)" },
+        { "name": "Basic Night Audit" },
+        { "name": "Cashiering & Billing" },
+        { "name": "Telephone Etiquette & Call Handling" },
+        { "name": "PMS Operation (Fidelio, Opera, or similar systems)" }
+      ]
+    },
+    {
+      "name": "FB Division (FB Service & Culinary)",
+      "slug": "fb-division",
+      "description": "The FB Division (Middle Level / D2) Program is an integrated training program that combines competencies in Food & Beverage Service and Culinary. Participants will learn intermediate food service techniques, table manners, basic barista skills, basic bartending (non-alcoholic if required), as well as international cooking techniques. This program aims to prepare skilled professionals who are ready to be placed in operational or entry-level supervisory positions in restaurants, cafés, hotels, and the culinary industry.",
+      "level": "middle",
+      "objective": [
+        { "name": "Master food and beverage service techniques according to industry standards." },
+        { "name": "Be able to perform professional table setup and table service." },
+        { "name": "Understand food and beverage product knowledge." },
+        { "name": "Master the basics of Western and Asian cooking." },
+        { "name": "Be able to process food ingredients efficiently and hygienically." },
+        { "name": "Be able to coordinate between kitchen and restaurant operations." },
+        { "name": "Be able to handle customers professionally (customer handling)." },
+        { "name": "Be ready to work as a Senior Waiter, Commis, or FB Supervisor Trainee." }
+      ],
+      "curriculum": [
+        { "name": "Service Sequence (Intermediate – Advanced)" },
+        { "name": "Table Setup (Breakfast, Lunch, Dinner)" },
+        { "name": "Basic Banquet Service" },
+        { "name": "Basic Barista Skills" },
+        { "name": "Beverage Knowledge (Juice, Mocktail, Tea, Coffee)" },
+        { "name": "Handling Guest Complaints" },
+        { "name": "Restaurant Cashiering & POS System" },
+        { "name": "Basic Knife Skills (Advanced Practice)" },
+        { "name": "Soup, Sauce & Stock Preparation" },
+        { "name": "Basic to Intermediate Western Cuisine" },
+        { "name": "Indonesian Cuisine" },
+        { "name": "Cold Kitchen Preparation" },
+        { "name": "Hot Kitchen Operation" },
+        { "name": "Food Safety & Hygiene (Intermediate Level)" },
+        { "name": "Basic Kitchen Inventory & Cost Control" }
+      ]
+    }
+  ]
+}

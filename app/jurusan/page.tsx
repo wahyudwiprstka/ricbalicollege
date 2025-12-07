@@ -1,60 +1,46 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { GraduationCap } from "lucide-react";
 import { client } from "../lib/sanity.client";
 import Hero from "../components/Hero";
 import Program from "../components/jurusan/Program";
+import JurusanEN from "./jurusanEN.json";
+import JurusanID from "./jurusanID.json";
+import { useTranslations } from "next-intl";
+import { getLocale } from "@/lib/localeClient";
 
-// const programs = [
-//   {
-//     name: "House Keeping",
-//     level: "Basic Level",
-//     description:
-//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsam itaque quas non, commodi doloremque. Dolore quaerat porro tempora facere?",
-//     image:
-//       "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=60",
-//   },
-//   {
-//     name: "FB Service",
-//     level: "Basic Level",
-//     description:
-//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsam itaque quas non, commodi doloremque. Dolore quaerat porro tempora facere?",
-//     image:
-//       "https://images.unsplash.com/photo-1537432376769-00a5d2d9fbb2?auto=format&fit=crop&w=900&q=60",
-//   },
-//   {
-//     name: "Culinary",
-//     level: "Basic Level",
-//     description:
-//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsam itaque quas non, commodi doloremque. Dolore quaerat porro tempora facere?",
-//     image:
-//       "https://images.unsplash.com/photo-1556745757-8d76bdb6984b?auto=format&fit=crop&w=900&q=60",
-//   },
-// ];
-
-export default async function ProgramStudi() {
-  const query = `*[_type=="program"] | order(title desc){
-    title,
-    slug,
-    level,
-    description,
-    objective,
-    kurikulum,
-    image{
-      asset -> {url},
-      alt
+// const t = useTranslations("Prodi");
+export default function ProgramStudi() {
+  // const query = `*[_type=="program"] | order(title desc){
+  //   title,
+  //   slug,
+  //   level,
+  //   description,
+  //   objective,
+  //   kurikulum,
+  //   image{
+  //     asset -> {url},
+  //     alt
+  //   }
+  // }`;
+  const locale = getLocale();
+  const getProgram = (locale: string | undefined) => {
+    if (locale == "id") {
+      return JurusanID;
+    } else if (locale == "en") {
+      return JurusanEN;
+    } else {
+      return JurusanEN;
     }
-  }`;
-  const programs = await client.fetch(query);
+  };
+  const program = getProgram(locale);
   return (
     <div className="min-h-screen bg-gray-50">
-      <Hero
-        title="Program Jurusan"
-        description="Temukan berbagai pilihan jurusan unggulan yang dirancang untuk
-          membentuk generasi profesional, kreatif, dan berdaya saing global."
-      />
+      <Hero title={program.title} description={program.description} />
 
       {/* Program Grid */}
-      <Program programs={programs} />
+      <Program programs={program} />
     </div>
   );
 }

@@ -6,8 +6,9 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 import LanguageSwitcher from "./LanguageSwitcher";
 import LanguageSwitcherMobile from "./LanguageSwitcherMobile";
+import { getLocale } from "@/lib/localeClient";
 
-const MobileMenu = ({ handleMenu, menuOpen, locale, changeLanguage }: any) => {
+const MobileMenu = ({ handleMenu, menuOpen }: any) => {
   const navItemsID = [
     { name: "Home", path: "/" },
     { name: "Program Jurusan", path: "/jurusan" },
@@ -33,6 +34,7 @@ const MobileMenu = ({ handleMenu, menuOpen, locale, changeLanguage }: any) => {
   };
   const pathname = usePathname();
   let navItems = navItemsEN;
+  const locale = getLocale();
   if (locale == "id") {
     navItems = navItemsID;
   } else if (locale == "en") {
@@ -89,7 +91,8 @@ const MobileMenu = ({ handleMenu, menuOpen, locale, changeLanguage }: any) => {
                       onClick={() => setLanguageOpen(true)}
                       className="flex items-center gap-2 py-3 font-black text-2xl uppercase text-gray-600 hover:text-primary cursor-pointer"
                     >
-                      Language <ChevronRight />
+                      {locale == "id" ? "Bahasa" : "Language"}
+                      <ChevronRight />
                     </button>
                   </li>
                 </ul>
@@ -103,7 +106,6 @@ const MobileMenu = ({ handleMenu, menuOpen, locale, changeLanguage }: any) => {
               closeLanguage={closeLanguage}
               handleMenu={handleMenu}
               locale={locale}
-              changeLanguage={changeLanguage}
             />
           </div>
         )}

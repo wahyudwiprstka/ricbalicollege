@@ -3,6 +3,7 @@
     "description": "Temukan berbagai pilihan jurusan unggulan yang dirancang untuk membentuk generasi profesional, kreatif, dan berdaya saing global.",
     "objective_title": "Tujuan Program",
     "curriculum_title": "Kurikulum Singkat",
+    "register_button": "Daftar Sekarang",
     "jurusan": [
         {
             "name": "House Keeping",

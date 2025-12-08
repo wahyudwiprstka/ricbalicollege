@@ -2,16 +2,26 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Hero from "../components/Hero";
+import { useMessages, useTranslations } from "next-intl";
 
 export default function AboutPage() {
+  const t = useTranslations("About");
+  const messages = useMessages();
+  const values = t.raw("values") as {
+    title: string;
+    desc: string;
+  }[];
+  const campus = t.raw("campus") as {
+    title: string;
+    desc: string;
+    location: string;
+  }[];
   return (
     <main className="min-h-screen bg-slate-100 text-gray-800">
       {/* Section 1 - Header */}
       <Hero
-        title="Tentang RIC College"
-        description="Lembaga pelatihan kerja di bawah Yayasan Tridaya Santana Loka yang
-          berdedikasi untuk membentuk generasi muda profesional, kompeten, dan
-          berdaya saing global."
+        title={t("hero_about_title")}
+        description={t("hero_about_description")}
       />
 
       {/* Section 2 - Sejarah Singkat */}
@@ -22,26 +32,15 @@ export default function AboutPage() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl font-semibold text-primary mb-4">
-            Sejarah Singkat
+          <h2 className="text-3xl font-black uppercase text-primary mb-4">
+            {messages.About.history_title}
           </h2>
-          <p className="text-gray-700 leading-relaxed">
-            <span className="font-semibold">
-              Rising International College (RIC){" "}
-            </span>
-            berdiri di bawah{" "}
-            <span className="font-semibold">Yayasan Tridaya Santana Loka </span>
-            yang didirikan pada{" "}
-            <span className="text-[#B21E35]">25 April 2025</span>. Lembaga ini
-            hadir sebagai wujud komitmen untuk meningkatkan kualitas pendidikan
-            vokasi di Indonesia, khususnya di sektor pariwisata dan perhotelan.
-          </p>
-          <p className="mt-4 text-gray-700 leading-relaxed">
-            Dengan dukungan tenaga pengajar profesional dan kemitraan strategis
-            bersama industri, RIC Bali siap menjadi lembaga pelatihan unggulan
-            yang mencetak tenaga kerja kompeten dan siap bersaing di kancah
-            nasional maupun internasional.
-          </p>
+          <p
+            dangerouslySetInnerHTML={{
+              __html: messages.About.history_description,
+            }}
+            className="text-gray-700 leading-relaxed text-justify"
+          ></p>
         </motion.div>
 
         <motion.div
@@ -63,22 +62,9 @@ export default function AboutPage() {
       {/* Section 3 - Nilai dan Komitmen */}
       <section className="bg-primary text-white py-16">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-6">Nilai & Komitmen Kami</h2>
+          <h2 className="text-3xl font-bold mb-6">{t("value_title")}</h2>
           <div className="grid md:grid-cols-3 gap-10">
-            {[
-              {
-                title: "Profesionalisme",
-                desc: "Kami menanamkan budaya kerja disiplin, tanggung jawab, dan integritas tinggi di setiap kegiatan pembelajaran.",
-              },
-              {
-                title: "Inovasi",
-                desc: "Kami mendorong kreativitas peserta pelatihan untuk beradaptasi dengan perkembangan industri global.",
-              },
-              {
-                title: "Keterampilan Global",
-                desc: "Kami membekali peserta dengan kompetensi praktis yang sesuai dengan standar industri internasional.",
-              },
-            ].map((item, i) => (
+            {values.map((item, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 30 }}
@@ -96,45 +82,26 @@ export default function AboutPage() {
       </section>
 
       {/* Section 4 - Lokasi */}
-      <section className="max-w-6xl mx-auto px-6 py-16 text-center">
-        <h2 className="text-3xl font-semibold text-primary mb-6">
-          Lokasi Kampus Jembrana
-        </h2>
-        <p className="text-gray-700 max-w-2xl mx-auto">
-          Jalan Panji Sakti No.168, Sawe Rangsasa, Kelurahan Dauhwaru, Kecamatan
-          Jembrana, Kabupaten Jembrana, Bali, Kode Pos: 82218
-        </p>
+      <section className="py-16">
+        {campus.map((item, index) => (
+          <div className="max-w-6xl px-6 py-6 mx-auto text-center">
+            <h2 className="text-3xl font-semibold text-primary mb-6">
+              {item.title}
+            </h2>
+            <p className="text-gray-700 max-w-2xl mx-auto">{item.desc}</p>
 
-        <div className="mt-8 w-full h-[400px] rounded-2xl overflow-hidden shadow-lg">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d7895.053329843404!2d114.63955460735863!3d-8.34973675136466!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMjEnMDAuNSJTIDExNMKwMzgnMjguNiJF!5e0!3m2!1sen!2sid!4v1764214691933!5m2!1sen!2sid"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen={true}
-            loading="lazy"
-          ></iframe>
-        </div>
-      </section>
-      <section className="max-w-6xl mx-auto px-6 pb-16 text-center">
-        <h2 className="text-3xl font-semibold text-primary mb-6">
-          Lokasi Kampus Singaraja
-        </h2>
-        <p className="text-gray-700 max-w-2xl mx-auto">
-          Banjar Dinas Segara, Desa Giri Mas, Kecamatan Sawan, Kabupaten
-          Buleleng. Kode pos 81171
-        </p>
-
-        <div className="mt-8 w-full h-[400px] rounded-2xl overflow-hidden shadow-lg">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d8152.829127033174!2d115.13916565827456!3d-8.083716908290457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMDQnNTkuMSJTIDExNcKwMDgnMzIuNiJF!5e0!3m2!1sen!2sid!4v1764216251964!5m2!1sen!2sid"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen={true}
-            loading="lazy"
-          ></iframe>
-        </div>
+            <div className="mt-8 w-full h-[400px] rounded-2xl overflow-hidden shadow-lg">
+              <iframe
+                src={item.location}
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        ))}
       </section>
     </main>
   );

@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/pagination";
 import NewsPagination from "../components/newsComponents/Pagination";
 import Hero from "../components/Hero";
+import { getTranslations } from "next-intl/server";
 
 export const revalidate = 60;
 interface PageProps {
@@ -48,13 +49,10 @@ export default async function BeritaPage({ searchParams }: PageProps) {
     body
   }`;
   const news = await client.fetch(query, { skip, limit });
+  const t = await getTranslations("news");
   return (
     <main className="min-h-screen bg-linear-to-b from-[#FFF8F8] to-[#FDECEC] text-gray-800">
-      <Hero
-        title="Berita & Kegiatan"
-        description="Dapatkan informasi terbaru seputar kegiatan, pelatihan, dan perkembangan
-        Rising International College (RIC) Bali Jembrana."
-      />
+      <Hero title={t("title")} description={t("description")} />
       <NewsContent news={news} />
       <NewsPagination page={page} totalpages={totalpages} />
     </main>

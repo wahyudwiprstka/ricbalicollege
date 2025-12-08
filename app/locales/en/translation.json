@@ -26,7 +26,7 @@
     ],
     "about_title": "About RIC Bali",
     "about_content": [
-      "<strong>Rising International College (RIC)</strong> Bali Jembrana is a job training institution under the auspices of the <strong>Tridaya Santana Loka Foundation.</strong><br/><br/>Established on <strong>May 2, 2025</strong>, RIC Bali is committed to producing young generations who are skilled, innovative, and ready to compete in the professional world, especially in the <strong>tourism, hospitality, and creative economy sectors.</strong><br/><br/>With the support of professional instructors and practice-based learning, RIC Bali is determined to become a leading vocational institution that makes a real contribution to the advancement of education in Indonesia."
+      "<strong>Rising International College (RIC)</strong> Bali is a job training institution under the auspices of the <strong>Tridaya Santana Loka Foundation.</strong><br/><br/>Established on <strong>May 2, 2025</strong>, RIC Bali is committed to producing young generations who are skilled, innovative, and ready to compete in the professional world, especially in the <strong>tourism, hospitality, and creative economy sectors.</strong><br/><br/>With the support of professional instructors and practice-based learning, RIC Bali is determined to become a leading vocational institution that makes a real contribution to the advancement of education in Indonesia."
     ],
     "about_button": "Read More",
     "cabang_title": "Our Branches",
@@ -64,10 +64,47 @@
     "partner_title": "Our Partner",
     "CTA_title": "Build Your Future with <primary>RIC Bali</primary>",
     "CTA_description": "Join our leading vocational training programs and gain the skills needed in today’s modern industry.",
-    "CTA_button": "Register Now"
+    "CTA_button": "Enroll Now"
   },
   "Prodi": {
     "prodi_title": "Study Program",
     "prodi_description": "Discover a variety of leading study program options designed to shape a generation of professional, creative, and globally competitive individuals."
+  },
+  "About": {
+    "hero_about_title": "About RIC Bali",
+    "hero_about_description": "A job training institution under the Tridaya Santana Loka Foundation, dedicated to shaping a generation of young professionals who are competent and globally competitive.",
+    "history_title": "Brief History",
+    "history_description": "<strong>Rising International College (RIC)</strong> was established under the <strong>Tridaya Santana Loka Foundation</strong>, founded on <strong>April 25, 2025</strong>. This institution was created as a commitment to improving the quality of vocational education in Indonesia, particularly in the tourism and hospitality sectors. With the support of professional instructors and strategic partnerships with industry, RIC Bali is ready to become a leading training institution that produces competent and work-ready graduates who can compete at both national and international levels.",
+    "value_title": "Our Values & Commitment",
+    "values": [
+      {
+        "title": "Professionalism",
+        "desc": "We instill a culture of discipline, responsibility, and high integrity in every learning activity."
+      },
+      {
+        "title": "Innovation",
+        "desc": "We encourage the creativity of trainees to adapt to global industry developments."
+      },
+      {
+        "title": "Global Skills",
+        "desc": "We equip participants with practical competencies aligned with international industry standards."
+      }
+    ],
+    "campus": [
+      {
+        "title": "RIC Jembrana Campus Location",
+        "desc": "No.168 Panji Sakti Street, Sawe Rangsasa, Dauhwaru Subdistrict, Jembrana District, Jembrana Regency, Bali 82218, Indonesia",
+        "location": "https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d7895.053329843404!2d114.63955460735863!3d-8.34973675136466!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMjEnMDAuNSJTIDExNMKwMzgnMjguNiJF!5e0!3m2!1sen!2sid!4v1764214691933!5m2!1sen!2sid"
+      },
+      {
+        "title": "RIC Singaraja Campus Location",
+        "desc": "Banjar Dinas Segara, Giri Mas Village, Sawan Subdistrict, Buleleng Regency, Bali 81171, Indonesia",
+        "location": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d8152.829127033174!2d115.13916565827456!3d-8.083716908290457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMDQnNTkuMSJTIDExNcKwMDgnMzIuNiJF!5e0!3m2!1sen!2sid!4v1764216251964!5m2!1sen!2sid"
+      }
+    ]
+  },
+  "news": {
+    "title": "News & Activities",
+    "description": "Get the latest information about activities, training programs, and developments at Rising International College (RIC) Bali."
   }
 }

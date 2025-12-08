@@ -59,7 +59,7 @@ const ProdiDetails = ({ program, programs }: any) => {
               href="/pendaftaran"
               className="inline-block bg-primary text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-rose-950 transition-all duration-300"
             >
-              Daftar Sekarang
+              {programs.register_button}
             </Link>
           </div>
         </motion.div>

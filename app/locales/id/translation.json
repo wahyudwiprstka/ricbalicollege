@@ -26,7 +26,7 @@
     ],
     "about_title": "Tentang RIC Bali",
     "about_content": [
-      "<strong>Rising International College (RIC)</strong> Bali Jembrana merupakan lembaga pelatihan kerja yang berada di bawah naungan <strong>Yayasan Tridaya Santana Loka.</strong><br/><br/>Berdiri pada <strong>2 Mei 2025</strong>, RIC Bali hadir dengan komitmen untuk mencetak generasi muda yang terampil, inovatif, dan siap bersaing di dunia kerja, khususnya di sektor <strong>pariwisata, perhotelan, dan ekonomi kreatif.</strong><br/><br/>Dengan dukungan tenaga pengajar profesional dan pembelajaran berbasis praktik, RIC Bali bertekad menjadi lembaga vokasi unggulan yang memberikan kontribusi nyata bagi kemajuan pendidikan di Indonesia."
+      "<strong>Rising International College (RIC)</strong> Bali merupakan lembaga pelatihan kerja yang berada di bawah naungan <strong>Yayasan Tridaya Santana Loka.</strong><br/><br/>Berdiri pada <strong>2 Mei 2025</strong>, RIC Bali hadir dengan komitmen untuk mencetak generasi muda yang terampil, inovatif, dan siap bersaing di dunia kerja, khususnya di sektor <strong>pariwisata, perhotelan, dan ekonomi kreatif.</strong><br/><br/>Dengan dukungan tenaga pengajar profesional dan pembelajaran berbasis praktik, RIC Bali bertekad menjadi lembaga vokasi unggulan yang memberikan kontribusi nyata bagi kemajuan pendidikan di Indonesia."
     ],
     "about_button": "Selengkapnya",
     "cabang_title": "Cabang Kami",
@@ -69,5 +69,42 @@
   "Prodi": {
     "prodi_title": "Program Jurusan",
     "prodi_description": "Temukan berbagai pilihan jurusan unggulan yang dirancang untuk membentuk generasi profesional, kreatif, dan berdaya saing global."
+  },
+  "About": {
+    "hero_about_title": "Tentang RIC Bali",
+    "hero_about_description": "Lembaga pelatihan kerja di bawah Yayasan Tridaya Santana Loka yang berdedikasi untuk membentuk generasi muda profesional, kompeten, dan berdaya saing global",
+    "history_title": "Sejarah Singkat",
+    "history_description": "<strong>Rising International College (RIC)</strong> berdiri di bawah <strong>Yayasan Tridaya Santana Loka</strong> yang didirikan pada <strong>25 April 2025</strong>. Lembaga ini hadir sebagai wujud komitmen untuk meningkatkan kualitas pendidikan vokasi di Indonesia, khususnya di sektor pariwisata dan perhotelan. Dengan dukungan tenaga pengajar profesional dan kemitraan strategis bersama industri, RIC Bali siap menjadi lembaga pelatihan unggulan yang mencetak tenaga kerja kompeten dan siap bersaing di kancah nasional maupun internasional.",
+    "value_title": "Nilai & Komitmen Kami",
+    "values": [
+      {
+        "title": "Profesionalisme",
+        "desc": "Kami menanamkan budaya kerja disiplin, tanggung jawab, dan integritas tinggi di setiap kegiatan pembelajaran."
+      },
+      {
+        "title": "Inovasi",
+        "desc": "Kami mendorong kreativitas peserta pelatihan untuk beradaptasi dengan perkembangan industri global."
+      },
+      {
+        "title": "Keterampilan Global",
+        "desc": "Kami membekali peserta dengan kompetensi praktis yang sesuai dengan standar industri internasional."
+      }
+    ],
+    "campus": [
+      {
+        "title": "Lokasi Kampus RIC Jembrana",
+        "desc": "Jalan Panji Sakti No.168, Sawe Rangsasa, Kelurahan Dauhwaru, Kecamatan Jembrana, Kabupaten Jembrana, Bali, Kode Pos 82218",
+        "location": "https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d7895.053329843404!2d114.63955460735863!3d-8.34973675136466!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMjEnMDAuNSJTIDExNMKwMzgnMjguNiJF!5e0!3m2!1sen!2sid!4v1764214691933!5m2!1sen!2sid"
+      },
+      {
+        "title": "Lokasi Kampus RIC Singaraja",
+        "desc": "Banjar Dinas Segara, Desa Giri Mas, Kecamatan Sawan, Kabupaten Buleleng. Kode Pos 81171",
+        "location": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d8152.829127033174!2d115.13916565827456!3d-8.083716908290457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMDQnNTkuMSJTIDExNcKwMDgnMzIuNiJF!5e0!3m2!1sen!2sid!4v1764216251964!5m2!1sen!2sid"
+      }
+    ]
+  },
+  "news": {
+    "title": "Berita & Kegiatan",
+    "description": "Dapatkan informasi terbaru seputar kegiatan, pelatihan, dan perkembangan Rising International College (RIC) Bali."
   }
 }

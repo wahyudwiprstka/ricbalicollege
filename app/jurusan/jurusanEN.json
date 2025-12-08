@@ -2,7 +2,8 @@
   "title": "Study Programs",
   "description": "Discover a wide selection of leading majors designed to shape a generation that is professional, creative, and globally competitive.",
   "objective_title": "Program Objectives",
-    "curriculum_title": "Brief Curriculum",
+  "curriculum_title": "Brief Curriculum",
+  "register_button": "Enroll Now",
   "jurusan": [
     {
       "name": "Housekeeping",

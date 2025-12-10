@@ -2,6 +2,7 @@ import Hero from "../components/Hero";
 import InstrukturList from "../components/Instruktur/InstrukturList";
 import CTA from "../components/Instruktur/CTA";
 import { client } from "../lib/sanity.client";
+import { getTranslations } from "next-intl/server";
 
 // const instructors = [
 //   {
@@ -31,20 +32,17 @@ export default async function InstructorPage() {
   const query = `*[_type=="instruktur"] | order(_createdAt asc){
     name,
     bidang,
+    bidangEN,
     image{
       asset -> {url}
     }
   }`;
+  const t = await getTranslations("instructor");
   const instructors = await client.fetch(query);
   return (
     <main className="min-h-screen bg-gray-50 text-gray-800">
       {/* Header Section */}
-      <Hero
-        title="Tim Instruktur Kami"
-        description="Para pengajar di RIC Bali merupakan profesional berpengalaman di
-          bidangnya, siap membimbing peserta pelatihan menuju karier sukses di
-          industri pariwisata."
-      />
+      <Hero title={t("hero_title")} description={t("hero_description")} />
 
       {/* Instruktur Cards */}
       <InstrukturList instructors={instructors} />

@@ -26,9 +26,6 @@ const SendForm = () => {
         }
       );
 
-      // Karena menggunakan mode 'no-cors', 'response.ok' akan selalu false/error
-      // Tapi data SANGAT mungkin sudah terkirim ke Google Form.
-      // Anda bisa menganggap ini berhasil dan menampilkan pesan sukses.
       alert("Data berhasil dikirim!");
     } catch (error) {
       console.error("Error saat mengirim data:", error);

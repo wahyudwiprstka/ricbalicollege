@@ -5,17 +5,15 @@ import { useState } from "react";
 import FormPendaftaran from "../components/Pendaftaran/FormPendaftaran";
 import SendForm from "../components/Pendaftaran/SendForm";
 import Hero from "../components/Hero";
+import { useTranslations } from "next-intl";
 
 export default function Pendaftaran() {
+  const t = useTranslations("pendaftaran");
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
 
-      <Hero
-        title="Pendaftaran Mahasiswa Baru"
-        description="Wujudkan masa depanmu bersama kami. Lengkapi formulir di bawah ini
-            untuk melakukan pendaftaran secara online."
-      />
+      <Hero title={t("hero_title")} description={t("hero_description")} />
 
       {/* Form Section */}
       <SendForm />

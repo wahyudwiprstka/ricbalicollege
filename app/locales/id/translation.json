@@ -106,5 +106,54 @@
   "news": {
     "title": "Berita & Kegiatan",
     "description": "Dapatkan informasi terbaru seputar kegiatan, pelatihan, dan perkembangan Rising International College (RIC) Bali."
+  },
+  "instructor": {
+    "hero_title": "Tim Instruktur Kami",
+    "hero_description": "Para pengajar di RIC Bali merupakan profesional berpengalaman di bidangnya, siap membimbing peserta pelatihan menuju karier sukses di industri pariwisata."
+  },
+  "pendaftaran": {
+    "hero_title": "Pendaftaran Mahasiswa Baru",
+    "hero_description": "Wujudkan masa depanmu bersama kami. Lengkapi formulir di bawah ini untuk melakukan pendaftaran secara online.",
+    "form": {
+      "form_title": "Formulir Pendaftaran",
+      "period_title": "Periode Bulan/Kelas Yang Dipilih",
+      "june_class": "Kelas Juni",
+      "december_class": "Kelas Desember",
+      "location_title": "Lokasi Kampus",
+      "fullname": "Nama Lengkap",
+      "nik": "NIK (Nomor KTP)",
+      "place_of_birth": "Tempat Lahir",
+      "date_of_birth": "Tanggal Lahir",
+      "address": "Alamat Sesuai KK dan KTP (Banjar/Lingkungan, Desa/Kelurahan, Kecamatan)",
+      "phonenumber": "Nomor HP",
+      "dad_name": "Nama Bapak",
+      "dad_phonenumber": "Nomor HP Bapak",
+      "mom_name": "Nama Ibu",
+      "mom_phonenumber": "Nomor HP Ibu",
+      "sma": "Asal Sekolah SMA/K Sederajat",
+      "choose_program": "Pilih Program Jurusan",
+      "send": "Kirim Pendaftaran"
+    }
+  },
+  "contact": {
+    "hero_title": "Hubungi Kami",
+    "hero_description": "Kami siap membantu menjawab pertanyaan Anda mengenai Rising International College Bali.",
+    "contact_information": "Informasi Kontak",
+    "address": "Jl. Panji Sakti No.168, Sawe Rangsasa, Kec. Jembrana, Kab. Jembrana, Bali 82218",
+    "operational_hour": "Jam Operasinal",
+    "hour": "Senin – Jumat: 08.00 - 17.00 WITA<br/>Sabtu: 08.00 - 13.00 WITA<br/>Minggu Libur",
+    "send_message": "Kirim Pesan",
+    "fullname": "Nama Lengkap",
+    "message": "Pesan",
+    "jembrana": "Kampus Jembrana",
+    "singaraja": "Kampus Singaraja"
+  },
+  "footer": {
+    "description": "Rising International College (RIC) Bali merupakan lembaga pelatihan kerja berbasis vokasi yang berkomitmen untuk menghasilkan lulusan berkualitas, kompeten, dan siap menghadapi tantangan industri global.",
+    "navigation": "Tautan Cepat",
+    "contact_us": "Hubungi Kami",
+    "jembrana": "Cabang Jembrana - Jl. Panji Sakti No.168, Sawe Rangsasa, Dauhwaru, Jembrana, Bali. Kode pos 82218",
+    "singaraja": "Cabang Singaraja - Banjar Dinas Segara, Desa Giri Mas, Kecamatan Sawan, Kabupaten Buleleng. Kode pos 81171",
+    "copyright": "Rising International College Bali. Semua Hak Cipta Dilindungi."
   }
 }

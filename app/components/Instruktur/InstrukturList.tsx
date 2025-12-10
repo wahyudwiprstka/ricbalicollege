@@ -1,8 +1,10 @@
 "use client";
+import { getLocale } from "@/lib/localeClient";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
 const InstrukturList = ({ instructors }: any) => {
+  const locale = getLocale();
   return (
     <section className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-10">
       {instructors.map((inst: any, i: number) => (
@@ -24,7 +26,7 @@ const InstrukturList = ({ instructors }: any) => {
           <div className="p-6 flex flex-col flex-1">
             <h3 className="text-xl font-semibold text-primary">{inst?.name}</h3>
             <p className="text-sm text-[#B21E35] font-medium mt-1">
-              {inst?.bidang}
+              {locale == "id" ? inst?.bidang : inst?.bidangEN}
             </p>
           </div>
         </motion.div>

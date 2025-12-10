@@ -1,9 +1,40 @@
 "use client";
+import { getLocale } from "@/lib/localeClient";
 import { motion } from "framer-motion";
 import { Mail, MapPin, Phone } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 
+const navItemsID = [
+  { name: "Home", path: "/" },
+  { name: "Program Jurusan", path: "/jurusan" },
+  { name: "Tentang", path: "/about" },
+  { name: "Berita", path: "/news" },
+  { name: "Instruktur", path: "/instructors" },
+  { name: "Pendaftaran", path: "/pendaftaran" },
+  { name: "Kontak", path: "/contact" },
+];
+
+const navItemsEN = [
+  { name: "Home", path: "/" },
+  { name: "Study Program", path: "/jurusan" },
+  { name: "About", path: "/about" },
+  { name: "News", path: "/news" },
+  { name: "Instructors", path: "/instructors" },
+  { name: "Enrollment", path: "/pendaftaran" },
+  { name: "Contact", path: "/contact" },
+];
+
+const locale = getLocale();
+
+let navItems = navItemsEN;
+
+if (locale == "id") {
+  navItems = navItemsID;
+}
+
 export default function Footer() {
+  const t = useTranslations("footer");
   return (
     <footer className="bg-slate-900 text-white py-12 px-6">
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
@@ -15,12 +46,7 @@ export default function Footer() {
           viewport={{ once: true }}
         >
           <h2 className="text-2xl font-bold mb-3 ">RIC Bali</h2>
-          <p className=" text-sm leading-relaxed">
-            Rising International College (RIC) Bali merupakan lembaga pelatihan
-            kerja berbasis vokasi yang berkomitmen untuk menghasilkan lulusan
-            berkualitas, kompeten, dan siap menghadapi tantangan industri
-            global.
-          </p>
+          <p className=" text-sm leading-relaxed">{t("description")}</p>
         </motion.div>
 
         {/* --- Kolom 2: Tautan Cepat --- */}
@@ -30,49 +56,18 @@ export default function Footer() {
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          <h3 className="text-lg font-semibold mb-3 ">Tautan Cepat</h3>
+          <h3 className="text-lg font-semibold mb-3 ">{t("navigation")}</h3>
           <ul className="space-y-2 ">
-            <li>
-              <Link href="/" className="hover:text-primary transition">
-                Beranda
-              </Link>
-            </li>
-            <li>
-              <Link href="/jurusan" className="hover:text-primary transition">
-                Program Jurusan
-              </Link>
-            </li>
-            <li>
-              <Link href="/about" className="hover:text-primary transition">
-                Tentang
-              </Link>
-            </li>
-            <li>
-              <Link href="/news" className="hover:text-primary transition">
-                Berita
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/instructors"
-                className="hover:text-primary transition"
-              >
-                Instruktur
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/pendaftaran"
-                className="hover:text-primary transition"
-              >
-                Pendaftaran
-              </Link>
-            </li>
-            <li>
-              <Link href="/contact" className="hover:text-primary transition">
-                Kontak
-              </Link>
-            </li>
+            {navItems.map((item: any) => (
+              <li>
+                <Link
+                  href={item.path}
+                  className="hover:text-primary transition"
+                >
+                  {item.name}
+                </Link>
+              </li>
+            ))}
           </ul>
         </motion.div>
 
@@ -83,21 +78,15 @@ export default function Footer() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h3 className="text-lg font-semibold mb-3 ">Hubungi Kami</h3>
+          <h3 className="text-lg font-semibold mb-3 ">{t("contact_us")}</h3>
           <ul className="space-y-3 text-sm mb-3">
             <li className="flex items-start gap-2">
               <MapPin size={30} className="mt-1 " />
-              <span>
-                Cabang Jembrana - Jl. Panji Sakti No.168, Sawe Rangsasa,
-                Dauhwaru, Jembrana, Bali. Kode pos 82218
-              </span>
+              <span>{t("jembrana")}</span>
             </li>
             <li className="flex items-start gap-2">
               <MapPin size={30} className="mt-1 " />
-              <span>
-                Cabang Singaraja - Banjar Dinas Segara, Desa Giri Mas, Kecamatan
-                Sawan, Kabupaten Buleleng. Kode pos 81171
-              </span>
+              <span>{t("singaraja")}</span>
             </li>
             <li className="flex items-center gap-2">
               <Phone size={18} className="" />
@@ -213,7 +202,7 @@ export default function Footer() {
       {/* --- Garis & Copyright --- */}
       <div className="border-t border-white/20 mt-10 pt-6 text-center text-white/60 text-sm">
         <p>
-          © {new Date().getFullYear()} RIC Bali. Semua Hak Cipta Dilindungi.
+          © {new Date().getFullYear()} {t("copyright")}
         </p>
       </div>
     </footer>

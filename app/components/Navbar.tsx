@@ -140,7 +140,7 @@ export default function Navbar() {
           </motion.nav>
         )}
       </AnimatePresence> */}
-        <div
+        {/* <div
           className={`${
             popup ? "flex" : "hidden"
           } w-screen py-2 bg-red-300 z-50 text-black px-8 md:px-16 flex justify-between`}
@@ -153,7 +153,7 @@ export default function Navbar() {
           <button onClick={() => setPopup(false)} className="cursor-pointer">
             <X />
           </button>
-        </div>
+        </div> */}
       </header>
     </>
   );
